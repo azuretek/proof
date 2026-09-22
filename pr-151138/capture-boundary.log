@@ -1,0 +1,80 @@
+# staged-media ownership boundary: raw capture log
+# revision: 26d1a9dcf99bde35616b4ff8fe4b7e1b2e715d9e
+# branch: fix/omitted-inline-images
+# phase: boundary
+# route: /__openclaw__/assistant-media
+# environment: Linux VM, Ubuntu 24.04, x86_64, 4 vCPU, on a build host; gateway bound to loopback
+# auth: every request carries an Authorization header; its value is never logged
+# redaction: mediaTicket, mediaTicketExpiresAt and any token query value become <redacted>
+# generated_at: 2026-09-22T03:05:10.814Z
+
+{"phase":"boundary","case":"staged object, owner bound, owning session named","source":"media://inbound/owned-staged.png","sessionNamed":true,"session":"agent:dev:dashboard:staged-media-proof","request":{"url":"http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Fowned-staged.png&meta=1&agentId=dev&sessionKey=agent%3Adev%3Adashboard%3Astaged-media-proof"},"response":{"status":200,"contentType":"application/json; charset=utf-8","contentLength":776,"sha256":"99fd350b00767ac4bc3c8a4d45ec30bf6c909743225c2afda7cb9e88789ba575","body":"{\"available\":true,\"mimeType\":\"image/png\",\"sizeBytes\":68,\"mediaTicket\":\"<redacted>\",\"mediaTicketExpiresAt\":\"<redacted>\"}"},"servedBytes":{"request":{"url":"http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Fowned-staged.png&agentId=dev&sessionKey=agent%3Adev%3Adashboard%3Astaged-media-proof&mediaTicket=<redacted>"},"status":200,"contentType":"image/png","contentLength":68,"sha256":"431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460"}}
+CASE staged object, owner bound, owning session named
+  request-url: http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Fowned-staged.png&meta=1&agentId=dev&sessionKey=agent%3Adev%3Adashboard%3Astaged-media-proof
+  session-named: yes (agent:dev:dashboard:staged-media-proof)
+  http-status: 200
+  content-type: application/json; charset=utf-8
+  content-length: 776
+  body-sha256: 99fd350b00767ac4bc3c8a4d45ec30bf6c909743225c2afda7cb9e88789ba575
+  body: {"available":true,"mimeType":"image/png","sizeBytes":68,"mediaTicket":"<redacted>","mediaTicketExpiresAt":"<redacted>"}
+  served-bytes-url: http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Fowned-staged.png&agentId=dev&sessionKey=agent%3Adev%3Adashboard%3Astaged-media-proof&mediaTicket=<redacted>
+  served-bytes: 200 image/png 68 bytes sha256=431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460
+
+{"phase":"boundary","case":"staged object, owner bound, no session named","source":"media://inbound/owned-staged.png","sessionNamed":false,"session":null,"request":{"url":"http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Fowned-staged.png&meta=1&agentId=dev"},"response":{"status":404,"contentType":"text/plain; charset=utf-8","contentLength":9,"sha256":"0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5","body":"<binary, see served bytes>"}}
+CASE staged object, owner bound, no session named
+  request-url: http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Fowned-staged.png&meta=1&agentId=dev
+  session-named: no
+  http-status: 404
+  content-type: text/plain; charset=utf-8
+  content-length: 9
+  body-sha256: 0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5
+
+{"phase":"boundary","case":"same object by absolute path, no session named","source":"/srv/openclaw-proof/state/media/inbound/owned-staged.png","sessionNamed":false,"session":null,"request":{"url":"http://127.0.0.1:19001/__openclaw__/assistant-media?source=%2Fsrv%2Fopenclaw-proof%2Fstate%2Fmedia%2Finbound%2Fowned-staged.png&meta=1&agentId=dev"},"response":{"status":404,"contentType":"text/plain; charset=utf-8","contentLength":9,"sha256":"0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5","body":"<binary, see served bytes>"}}
+CASE same object by absolute path, no session named
+  request-url: http://127.0.0.1:19001/__openclaw__/assistant-media?source=%2Fsrv%2Fopenclaw-proof%2Fstate%2Fmedia%2Finbound%2Fowned-staged.png&meta=1&agentId=dev
+  session-named: no
+  http-status: 404
+  content-type: text/plain; charset=utf-8
+  content-length: 9
+  body-sha256: 0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5
+
+{"phase":"boundary","case":"same object by file URL, no session named","source":"file:///srv/openclaw-proof/state/media/inbound/owned-staged.png","sessionNamed":false,"session":null,"request":{"url":"http://127.0.0.1:19001/__openclaw__/assistant-media?source=file%3A%2F%2F%2Fsrv%2Fopenclaw-proof%2Fstate%2Fmedia%2Finbound%2Fowned-staged.png&meta=1&agentId=dev"},"response":{"status":404,"contentType":"text/plain; charset=utf-8","contentLength":9,"sha256":"0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5","body":"<binary, see served bytes>"}}
+CASE same object by file URL, no session named
+  request-url: http://127.0.0.1:19001/__openclaw__/assistant-media?source=file%3A%2F%2F%2Fsrv%2Fopenclaw-proof%2Fstate%2Fmedia%2Finbound%2Fowned-staged.png&meta=1&agentId=dev
+  session-named: no
+  http-status: 404
+  content-type: text/plain; charset=utf-8
+  content-length: 9
+  body-sha256: 0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5
+
+{"phase":"boundary","case":"freshly staged object, no owner bound, no session named","source":"media://inbound/fresh-staged.png","sessionNamed":false,"session":null,"request":{"url":"http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Ffresh-staged.png&meta=1&agentId=dev"},"response":{"status":404,"contentType":"text/plain; charset=utf-8","contentLength":9,"sha256":"0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5","body":"<binary, see served bytes>"}}
+CASE freshly staged object, no owner bound, no session named
+  request-url: http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Ffresh-staged.png&meta=1&agentId=dev
+  session-named: no
+  http-status: 404
+  content-type: text/plain; charset=utf-8
+  content-length: 9
+  body-sha256: 0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5
+
+{"phase":"boundary","case":"control: never-staged object, no session named","source":"media://inbound/unstaged-control.png","sessionNamed":false,"session":null,"request":{"url":"http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Funstaged-control.png&meta=1&agentId=dev"},"response":{"status":200,"contentType":"application/json; charset=utf-8","contentLength":604,"sha256":"8014959228f377453abe236b45f28daa1555955577ac352bf6141a16cc360471","body":"{\"available\":true,\"mimeType\":\"image/png\",\"sizeBytes\":68,\"mediaTicket\":\"<redacted>\",\"mediaTicketExpiresAt\":\"<redacted>\"}"}}
+CASE control: never-staged object, no session named
+  request-url: http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Funstaged-control.png&meta=1&agentId=dev
+  session-named: no
+  http-status: 200
+  content-type: application/json; charset=utf-8
+  content-length: 604
+  body-sha256: 8014959228f377453abe236b45f28daa1555955577ac352bf6141a16cc360471
+  body: {"available":true,"mimeType":"image/png","sizeBytes":68,"mediaTicket":"<redacted>","mediaTicketExpiresAt":"<redacted>"}
+
+{"phase":"boundary","case":"control: absolute path, owning session named","source":"/srv/openclaw-proof/state/media/inbound/owned-staged.png","sessionNamed":true,"session":"agent:dev:dashboard:staged-media-proof","request":{"url":"http://127.0.0.1:19001/__openclaw__/assistant-media?source=%2Fsrv%2Fopenclaw-proof%2Fstate%2Fmedia%2Finbound%2Fowned-staged.png&meta=1&agentId=dev&sessionKey=agent%3Adev%3Adashboard%3Astaged-media-proof"},"response":{"status":200,"contentType":"application/json; charset=utf-8","contentLength":808,"sha256":"64feaf8ffadf9339f96d5ebf368e3bd93eb6999b00ebf231d56a175e2f5b478e","body":"{\"available\":true,\"mimeType\":\"image/png\",\"sizeBytes\":68,\"mediaTicket\":\"<redacted>\",\"mediaTicketExpiresAt\":\"<redacted>\"}"},"servedBytes":{"request":{"url":"http://127.0.0.1:19001/__openclaw__/assistant-media?source=%2Fsrv%2Fopenclaw-proof%2Fstate%2Fmedia%2Finbound%2Fowned-staged.png&agentId=dev&sessionKey=agent%3Adev%3Adashboard%3Astaged-media-proof&mediaTicket=<redacted>"},"status":200,"contentType":"image/png","contentLength":68,"sha256":"431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460"}}
+CASE control: absolute path, owning session named
+  request-url: http://127.0.0.1:19001/__openclaw__/assistant-media?source=%2Fsrv%2Fopenclaw-proof%2Fstate%2Fmedia%2Finbound%2Fowned-staged.png&meta=1&agentId=dev&sessionKey=agent%3Adev%3Adashboard%3Astaged-media-proof
+  session-named: yes (agent:dev:dashboard:staged-media-proof)
+  http-status: 200
+  content-type: application/json; charset=utf-8
+  content-length: 808
+  body-sha256: 64feaf8ffadf9339f96d5ebf368e3bd93eb6999b00ebf231d56a175e2f5b478e
+  body: {"available":true,"mimeType":"image/png","sizeBytes":68,"mediaTicket":"<redacted>","mediaTicketExpiresAt":"<redacted>"}
+  served-bytes-url: http://127.0.0.1:19001/__openclaw__/assistant-media?source=%2Fsrv%2Fopenclaw-proof%2Fstate%2Fmedia%2Finbound%2Fowned-staged.png&agentId=dev&sessionKey=agent%3Adev%3Adashboard%3Astaged-media-proof&mediaTicket=<redacted>
+  served-bytes: 200 image/png 68 bytes sha256=431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460
+

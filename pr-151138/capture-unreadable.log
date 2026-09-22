@@ -1,0 +1,37 @@
+# staged-media ownership boundary: raw capture log
+# revision: 26d1a9dcf99bde35616b4ff8fe4b7e1b2e715d9e
+# branch: fix/omitted-inline-images
+# phase: unreadable
+# route: /__openclaw__/assistant-media
+# environment: Linux VM, Ubuntu 24.04, x86_64, 4 vCPU, on a build host; gateway bound to loopback
+# auth: every request carries an Authorization header; its value is never logged
+# redaction: mediaTicket, mediaTicketExpiresAt and any token query value become <redacted>
+# generated_at: 2026-09-22T03:05:12.330Z
+
+{"phase":"unreadable","case":"staged object, owner bound, owning session named","source":"media://inbound/owned-staged.png","sessionNamed":true,"session":"agent:dev:dashboard:staged-media-proof","request":{"url":"http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Fowned-staged.png&meta=1&agentId=dev&sessionKey=agent%3Adev%3Adashboard%3Astaged-media-proof"},"response":{"status":404,"contentType":"text/plain; charset=utf-8","contentLength":9,"sha256":"0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5","body":"<binary, see served bytes>"}}
+CASE staged object, owner bound, owning session named
+  request-url: http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Fowned-staged.png&meta=1&agentId=dev&sessionKey=agent%3Adev%3Adashboard%3Astaged-media-proof
+  session-named: yes (agent:dev:dashboard:staged-media-proof)
+  http-status: 404
+  content-type: text/plain; charset=utf-8
+  content-length: 9
+  body-sha256: 0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5
+
+{"phase":"unreadable","case":"freshly staged object, no owner bound, no session named","source":"media://inbound/fresh-staged.png","sessionNamed":false,"session":null,"request":{"url":"http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Ffresh-staged.png&meta=1&agentId=dev"},"response":{"status":404,"contentType":"text/plain; charset=utf-8","contentLength":9,"sha256":"0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5","body":"<binary, see served bytes>"}}
+CASE freshly staged object, no owner bound, no session named
+  request-url: http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Ffresh-staged.png&meta=1&agentId=dev
+  session-named: no
+  http-status: 404
+  content-type: text/plain; charset=utf-8
+  content-length: 9
+  body-sha256: 0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5
+
+{"phase":"unreadable","case":"never-staged object, no session named","source":"media://inbound/unstaged-control.png","sessionNamed":false,"session":null,"request":{"url":"http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Funstaged-control.png&meta=1&agentId=dev"},"response":{"status":404,"contentType":"text/plain; charset=utf-8","contentLength":9,"sha256":"0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5","body":"<binary, see served bytes>"}}
+CASE never-staged object, no session named
+  request-url: http://127.0.0.1:19001/__openclaw__/assistant-media?source=media%3A%2F%2Finbound%2Funstaged-control.png&meta=1&agentId=dev
+  session-named: no
+  http-status: 404
+  content-type: text/plain; charset=utf-8
+  content-length: 9
+  body-sha256: 0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5
+

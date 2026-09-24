@@ -1,0 +1,6 @@
+2026-09-23T22:15:07.003-07:00 [ws] ← req chat.send conn=d3fb6824…5fae id=52:12060861-…202e
+2026-09-23T22:15:07.119-07:00 [ws] → res ✓ chat.send 117ms runId=37dd87f1-4795-4e10-806c-3bd7849edd36 conn=d3fb6824…5fae id=52:12060861-…202e
+2026-09-23T22:18:25.714-07:00 [ws] ← req chat.send conn=0a161981…73d0 id=51:690364d9-…c88c
+2026-09-23T22:18:25.751-07:00 [ws] → res ✗ chat.send 38ms errorCode=INVALID_REQUEST errorMessage=invalid chat.send params: at root: unexpected property '__controlUiReconnectResume' conn=0a161981…73d0 id=51:690364d9-…c88c
+2026-09-23T22:18:40.012-07:00 [ws] ← req chat.send conn=0a161981…73d0 id=54:5ea6d6af-…bd83
+2026-09-23T22:18:40.018-07:00 [ws] → res ✗ chat.send 6ms errorCode=INVALID_REQUEST errorMessage=invalid chat.send params: at root: unexpected property '__controlUiReconnectResume' conn=0a161981…73d0 id=54:5ea6d6af-…bd83

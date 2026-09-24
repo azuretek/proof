@@ -1,0 +1,6 @@
+2026-09-23T22:22:09.031-07:00 [ws] ← req chat.send conn=1d5b55f0…020d id=52:804fa9f0-…606a
+2026-09-23T22:22:09.132-07:00 [ws] → res ✓ chat.send 102ms runId=f066d208-7428-45ae-8452-73c3a20338f6 conn=1d5b55f0…020d id=52:804fa9f0-…606a
+2026-09-23T22:25:28.768-07:00 [ws] ← req chat.send conn=f1e164c6…c43f id=51:55e93eda-…1411
+2026-09-23T22:25:28.883-07:00 [ws] → res ✓ chat.send 122ms runId=02e0b4b2-bd46-4f99-a2ff-41773326ca87 conn=f1e164c6…c43f id=51:55e93eda-…1411
+2026-09-23T22:25:42.962-07:00 [ws] ← req chat.send conn=f1e164c6…c43f id=73:ebe3f52c-…928c
+2026-09-23T22:25:42.999-07:00 [ws] → res ✓ chat.send 37ms runId=372fa729-5f4f-4e59-848e-92002c0e6389 conn=f1e164c6…c43f id=73:ebe3f52c-…928c

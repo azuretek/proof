@@ -15,3 +15,12 @@ Staged-media ownership boundary for `openclaw/openclaw#151138`, captured on a ga
 - `README.md`, the run recipe
 
 Everything here is either produced by the harness or written by it. No household host name, path, address or account appears in these files.
+
+## pr-151441
+
+Reconnect resume marker on a native UI client, for `openclaw/openclaw#151441`: the same iOS Simulator run against a gateway built from `main` and one built from the fix revision.
+
+- `base-*.png` and `base-reconnect.mp4`, without the fix: both sends after the reconnect show `Not sent`
+- `head-*.png` and `head-reconnect.mp4`, with the fix: all three sends are answered
+- `gateway-base-chat-send.log` and `gateway-head-chat-send.log`, every `chat.send` line from each gateway log
+- `README.md`, the run and what each file shows

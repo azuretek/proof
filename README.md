@@ -24,3 +24,12 @@ Reconnect resume marker on a native UI client, for `openclaw/openclaw#151441`: t
 - `head-*.png` and `head-reconnect.mp4`, with the fix: all three sends are answered
 - `gateway-base-chat-send.log` and `gateway-head-chat-send.log`, every `chat.send` line from each gateway log
 - `README.md`, the run and what each file shows
+
+## chela-76
+
+Notice banners drawn as the Control UI toast, for `azuretek/chela#76`: desktop and iOS, light and dark, at `main` and at the PR head.
+
+- `desktop-{before,after}-{light,dark}.png`, the Electron capture harness pages
+- `ios-{before,after}-{light,dark}.png`, the iOS Simulator captures with seeded notices
+- `job.sh`, the script that produced them
+- `README.md`, the run and what each side shows

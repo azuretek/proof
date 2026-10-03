@@ -1,0 +1,19 @@
+EXPECTED_SOURCE ui/src/pages/chat/attachment-payload-store.ts e25956731f43bb794c9760623550a3f7534c6ea2
+EXPECTED_SOURCE ui/src/pages/chat/composer-persistence.ts a04f47c63ebc3014255be80223c9b7249d684a58
+EXPECTED_SOURCE ui/src/pages/chat/durable-composer-persistence.ts c53844959a0b544d7247a3d41b623d193f54c8f1
+EXPECTED_SOURCE ui/src/pages/new-session/draft-persistence.ts 31cf7897f749a596e7eddfa1d6168671fdeda17c
+EXPECTED_SOURCE ui/src/pages/new-session/draft-submission-flow.ts 8ad1ad22f30d1f14cc5fe9dc8acd326feddccc72
+BROWSER 153.0.8010.12 persistent
+SERVED_SOURCE ui/src/pages/chat/attachment-payload-store.ts e25956731f43bb794c9760623550a3f7534c6ea2
+SERVED_SOURCE ui/src/pages/chat/composer-persistence.ts a04f47c63ebc3014255be80223c9b7249d684a58
+SERVED_SOURCE ui/src/pages/chat/durable-composer-persistence.ts c53844959a0b544d7247a3d41b623d193f54c8f1
+NORMAL_LOGIN_READY
+STYLES_READY 51
+UPLOAD_READ {
+  variant: 'before',
+  route: 'chat',
+  kind: 'delete',
+  n: 3,
+  sourceDeleted: true
+}
+RESULT {"events":["put:1:3505.9000000059605","source-deleted:3532.2000000178814","abort:DataError:Failed to write blobs (IOError)","put:3:3598.5"],"text":"Skip to main content\nC3-PO\nPAGES\nHome\nAgents\nDashboards\nSystems\nAutomations\nPlugins\nONLINE\nDU\nShared owner\nCounts may be out of date. Retry\nSESSIONS\nDU\nDemo User\nConnected\n1 inbox item\n1\nMain Session\nCould not store the previous draft in browser storage. It remains available in this tab. \ninvalid sessions.messages.subscribe params: at root: unexpected property 'subscriptionId'\nRetry\nNo models available"}

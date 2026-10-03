@@ -1,0 +1,19 @@
+EXPECTED_SOURCE ui/src/pages/chat/attachment-payload-store.ts c960e934438de4f69cfeb6194b5791443724057b
+EXPECTED_SOURCE ui/src/pages/chat/composer-persistence.ts 0ce0cec6f67744b7ad6d42e5189e017e352d7363
+EXPECTED_SOURCE ui/src/pages/chat/durable-composer-persistence.ts 49ef5569601720eb1f72167ca0bd75d12fe7ca0e
+EXPECTED_SOURCE ui/src/pages/new-session/draft-persistence.ts 6252e223616cdf8c0814479a3628225b3741c62c
+EXPECTED_SOURCE ui/src/pages/new-session/draft-submission-flow.ts 4981b629901cde15ec73cb9c6da83fce3811d935
+BROWSER 153.0.8010.12 persistent
+SERVED_SOURCE ui/src/pages/chat/attachment-payload-store.ts c960e934438de4f69cfeb6194b5791443724057b
+SERVED_SOURCE ui/src/pages/chat/composer-persistence.ts 0ce0cec6f67744b7ad6d42e5189e017e352d7363
+SERVED_SOURCE ui/src/pages/chat/durable-composer-persistence.ts 49ef5569601720eb1f72167ca0bd75d12fe7ca0e
+NORMAL_LOGIN_READY
+STYLES_READY 51
+UPLOAD_READ {
+  variant: 'after',
+  route: 'chat',
+  kind: 'delete',
+  n: 3,
+  sourceDeleted: true
+}
+RESULT {"events":["put:1:4427.300000011921","source-deleted:4441.5","commit:1","put:2:4509.300000011921","commit:2","put:3:4537.4000000059605","commit:3","put:3:4607.200000017881"],"text":"Skip to main content\nC3-PO\nPAGES\nHome\nAgents\nDashboards\nSystems\nAutomations\nPlugins\nONLINE\nDU\nShared owner\nCounts may be out of date. Retry\nSESSIONS\nDU\nDemo User\nConnected\n1 inbox item\n1\nMain Session\ninvalid sessions.messages.subscribe params: at root: unexpected property 'subscriptionId'\nRetry\nNo models available"}

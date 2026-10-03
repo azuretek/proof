@@ -1,0 +1,9 @@
+{
+  "head": "82d31219aa8debde1c0b8f5905d4d58b1c1195c9",
+  "node": "v24.19.0",
+  "distEntryMtime": "2026-10-03T04:17:30.741Z",
+  "provider": "openai-paid",
+  "model": "gpt-5.4-nano",
+  "publishedRate": "input 0.20/M, output 1.25/M, cached input 0.02/M",
+  "startedAt": "2026-10-03T05:16:58.627Z"
+}

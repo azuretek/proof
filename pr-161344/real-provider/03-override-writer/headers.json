@@ -1,0 +1,5 @@
+{
+  "x-forwarded-user": "writer@proof.test",
+  "x-forwarded-for": "203.0.113.7",
+  "x-openclaw-scopes": "operator.read,operator.write"
+}

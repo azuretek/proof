@@ -1,0 +1,654 @@
+{
+  "at": "2026-10-03T06:50:23.353Z",
+  "status": 200,
+  "body": {
+    "object": "page",
+    "data": [
+      {
+        "object": "bucket",
+        "end_time": 1791005700,
+        "end_time_iso": "2026-10-03T05:35:00+00:00",
+        "results": [],
+        "start_time": 1791005640,
+        "start_time_iso": "2026-10-03T05:34:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791005760,
+        "end_time_iso": "2026-10-03T05:36:00+00:00",
+        "results": [],
+        "start_time": 1791005700,
+        "start_time_iso": "2026-10-03T05:35:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791005820,
+        "end_time_iso": "2026-10-03T05:37:00+00:00",
+        "results": [
+          {
+            "object": "organization.usage.completions.result",
+            "project_id": null,
+            "num_model_requests": 3,
+            "user_id": null,
+            "api_key_id": null,
+            "model": "gpt-5.4-nano-2026-03-17",
+            "batch": null,
+            "service_tier": null,
+            "input_tokens": 250,
+            "output_tokens": 15,
+            "input_cached_tokens": 0,
+            "input_cache_write_tokens": 0,
+            "input_cache_write_12h_tokens": 0,
+            "input_uncached_tokens": 250,
+            "input_text_tokens": 250,
+            "output_text_tokens": 15,
+            "input_cached_text_tokens": 0,
+            "input_audio_tokens": 0,
+            "input_cached_audio_tokens": 0,
+            "output_audio_tokens": 0,
+            "input_image_tokens": 0,
+            "input_cached_image_tokens": 0,
+            "output_image_tokens": 0,
+            "api_source": null
+          }
+        ],
+        "start_time": 1791005760,
+        "start_time_iso": "2026-10-03T05:36:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791005880,
+        "end_time_iso": "2026-10-03T05:38:00+00:00",
+        "results": [],
+        "start_time": 1791005820,
+        "start_time_iso": "2026-10-03T05:37:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791005940,
+        "end_time_iso": "2026-10-03T05:39:00+00:00",
+        "results": [],
+        "start_time": 1791005880,
+        "start_time_iso": "2026-10-03T05:38:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006000,
+        "end_time_iso": "2026-10-03T05:40:00+00:00",
+        "results": [],
+        "start_time": 1791005940,
+        "start_time_iso": "2026-10-03T05:39:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006060,
+        "end_time_iso": "2026-10-03T05:41:00+00:00",
+        "results": [],
+        "start_time": 1791006000,
+        "start_time_iso": "2026-10-03T05:40:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006120,
+        "end_time_iso": "2026-10-03T05:42:00+00:00",
+        "results": [],
+        "start_time": 1791006060,
+        "start_time_iso": "2026-10-03T05:41:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006180,
+        "end_time_iso": "2026-10-03T05:43:00+00:00",
+        "results": [],
+        "start_time": 1791006120,
+        "start_time_iso": "2026-10-03T05:42:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006240,
+        "end_time_iso": "2026-10-03T05:44:00+00:00",
+        "results": [],
+        "start_time": 1791006180,
+        "start_time_iso": "2026-10-03T05:43:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006300,
+        "end_time_iso": "2026-10-03T05:45:00+00:00",
+        "results": [],
+        "start_time": 1791006240,
+        "start_time_iso": "2026-10-03T05:44:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006360,
+        "end_time_iso": "2026-10-03T05:46:00+00:00",
+        "results": [],
+        "start_time": 1791006300,
+        "start_time_iso": "2026-10-03T05:45:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006420,
+        "end_time_iso": "2026-10-03T05:47:00+00:00",
+        "results": [],
+        "start_time": 1791006360,
+        "start_time_iso": "2026-10-03T05:46:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006480,
+        "end_time_iso": "2026-10-03T05:48:00+00:00",
+        "results": [],
+        "start_time": 1791006420,
+        "start_time_iso": "2026-10-03T05:47:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006540,
+        "end_time_iso": "2026-10-03T05:49:00+00:00",
+        "results": [],
+        "start_time": 1791006480,
+        "start_time_iso": "2026-10-03T05:48:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006600,
+        "end_time_iso": "2026-10-03T05:50:00+00:00",
+        "results": [],
+        "start_time": 1791006540,
+        "start_time_iso": "2026-10-03T05:49:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006660,
+        "end_time_iso": "2026-10-03T05:51:00+00:00",
+        "results": [],
+        "start_time": 1791006600,
+        "start_time_iso": "2026-10-03T05:50:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006720,
+        "end_time_iso": "2026-10-03T05:52:00+00:00",
+        "results": [],
+        "start_time": 1791006660,
+        "start_time_iso": "2026-10-03T05:51:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006780,
+        "end_time_iso": "2026-10-03T05:53:00+00:00",
+        "results": [],
+        "start_time": 1791006720,
+        "start_time_iso": "2026-10-03T05:52:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006840,
+        "end_time_iso": "2026-10-03T05:54:00+00:00",
+        "results": [],
+        "start_time": 1791006780,
+        "start_time_iso": "2026-10-03T05:53:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006900,
+        "end_time_iso": "2026-10-03T05:55:00+00:00",
+        "results": [],
+        "start_time": 1791006840,
+        "start_time_iso": "2026-10-03T05:54:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791006960,
+        "end_time_iso": "2026-10-03T05:56:00+00:00",
+        "results": [],
+        "start_time": 1791006900,
+        "start_time_iso": "2026-10-03T05:55:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007020,
+        "end_time_iso": "2026-10-03T05:57:00+00:00",
+        "results": [],
+        "start_time": 1791006960,
+        "start_time_iso": "2026-10-03T05:56:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007080,
+        "end_time_iso": "2026-10-03T05:58:00+00:00",
+        "results": [],
+        "start_time": 1791007020,
+        "start_time_iso": "2026-10-03T05:57:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007140,
+        "end_time_iso": "2026-10-03T05:59:00+00:00",
+        "results": [],
+        "start_time": 1791007080,
+        "start_time_iso": "2026-10-03T05:58:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007200,
+        "end_time_iso": "2026-10-03T06:00:00+00:00",
+        "results": [],
+        "start_time": 1791007140,
+        "start_time_iso": "2026-10-03T05:59:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007260,
+        "end_time_iso": "2026-10-03T06:01:00+00:00",
+        "results": [],
+        "start_time": 1791007200,
+        "start_time_iso": "2026-10-03T06:00:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007320,
+        "end_time_iso": "2026-10-03T06:02:00+00:00",
+        "results": [],
+        "start_time": 1791007260,
+        "start_time_iso": "2026-10-03T06:01:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007380,
+        "end_time_iso": "2026-10-03T06:03:00+00:00",
+        "results": [],
+        "start_time": 1791007320,
+        "start_time_iso": "2026-10-03T06:02:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007440,
+        "end_time_iso": "2026-10-03T06:04:00+00:00",
+        "results": [],
+        "start_time": 1791007380,
+        "start_time_iso": "2026-10-03T06:03:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007500,
+        "end_time_iso": "2026-10-03T06:05:00+00:00",
+        "results": [],
+        "start_time": 1791007440,
+        "start_time_iso": "2026-10-03T06:04:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007560,
+        "end_time_iso": "2026-10-03T06:06:00+00:00",
+        "results": [],
+        "start_time": 1791007500,
+        "start_time_iso": "2026-10-03T06:05:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007620,
+        "end_time_iso": "2026-10-03T06:07:00+00:00",
+        "results": [],
+        "start_time": 1791007560,
+        "start_time_iso": "2026-10-03T06:06:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007680,
+        "end_time_iso": "2026-10-03T06:08:00+00:00",
+        "results": [],
+        "start_time": 1791007620,
+        "start_time_iso": "2026-10-03T06:07:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007740,
+        "end_time_iso": "2026-10-03T06:09:00+00:00",
+        "results": [],
+        "start_time": 1791007680,
+        "start_time_iso": "2026-10-03T06:08:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007800,
+        "end_time_iso": "2026-10-03T06:10:00+00:00",
+        "results": [],
+        "start_time": 1791007740,
+        "start_time_iso": "2026-10-03T06:09:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007860,
+        "end_time_iso": "2026-10-03T06:11:00+00:00",
+        "results": [],
+        "start_time": 1791007800,
+        "start_time_iso": "2026-10-03T06:10:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007920,
+        "end_time_iso": "2026-10-03T06:12:00+00:00",
+        "results": [],
+        "start_time": 1791007860,
+        "start_time_iso": "2026-10-03T06:11:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791007980,
+        "end_time_iso": "2026-10-03T06:13:00+00:00",
+        "results": [],
+        "start_time": 1791007920,
+        "start_time_iso": "2026-10-03T06:12:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008040,
+        "end_time_iso": "2026-10-03T06:14:00+00:00",
+        "results": [],
+        "start_time": 1791007980,
+        "start_time_iso": "2026-10-03T06:13:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008100,
+        "end_time_iso": "2026-10-03T06:15:00+00:00",
+        "results": [],
+        "start_time": 1791008040,
+        "start_time_iso": "2026-10-03T06:14:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008160,
+        "end_time_iso": "2026-10-03T06:16:00+00:00",
+        "results": [],
+        "start_time": 1791008100,
+        "start_time_iso": "2026-10-03T06:15:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008220,
+        "end_time_iso": "2026-10-03T06:17:00+00:00",
+        "results": [],
+        "start_time": 1791008160,
+        "start_time_iso": "2026-10-03T06:16:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008280,
+        "end_time_iso": "2026-10-03T06:18:00+00:00",
+        "results": [],
+        "start_time": 1791008220,
+        "start_time_iso": "2026-10-03T06:17:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008340,
+        "end_time_iso": "2026-10-03T06:19:00+00:00",
+        "results": [],
+        "start_time": 1791008280,
+        "start_time_iso": "2026-10-03T06:18:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008400,
+        "end_time_iso": "2026-10-03T06:20:00+00:00",
+        "results": [],
+        "start_time": 1791008340,
+        "start_time_iso": "2026-10-03T06:19:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008460,
+        "end_time_iso": "2026-10-03T06:21:00+00:00",
+        "results": [],
+        "start_time": 1791008400,
+        "start_time_iso": "2026-10-03T06:20:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008520,
+        "end_time_iso": "2026-10-03T06:22:00+00:00",
+        "results": [],
+        "start_time": 1791008460,
+        "start_time_iso": "2026-10-03T06:21:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008580,
+        "end_time_iso": "2026-10-03T06:23:00+00:00",
+        "results": [],
+        "start_time": 1791008520,
+        "start_time_iso": "2026-10-03T06:22:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008640,
+        "end_time_iso": "2026-10-03T06:24:00+00:00",
+        "results": [],
+        "start_time": 1791008580,
+        "start_time_iso": "2026-10-03T06:23:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008700,
+        "end_time_iso": "2026-10-03T06:25:00+00:00",
+        "results": [],
+        "start_time": 1791008640,
+        "start_time_iso": "2026-10-03T06:24:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008760,
+        "end_time_iso": "2026-10-03T06:26:00+00:00",
+        "results": [],
+        "start_time": 1791008700,
+        "start_time_iso": "2026-10-03T06:25:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008820,
+        "end_time_iso": "2026-10-03T06:27:00+00:00",
+        "results": [],
+        "start_time": 1791008760,
+        "start_time_iso": "2026-10-03T06:26:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008880,
+        "end_time_iso": "2026-10-03T06:28:00+00:00",
+        "results": [],
+        "start_time": 1791008820,
+        "start_time_iso": "2026-10-03T06:27:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791008940,
+        "end_time_iso": "2026-10-03T06:29:00+00:00",
+        "results": [],
+        "start_time": 1791008880,
+        "start_time_iso": "2026-10-03T06:28:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009000,
+        "end_time_iso": "2026-10-03T06:30:00+00:00",
+        "results": [],
+        "start_time": 1791008940,
+        "start_time_iso": "2026-10-03T06:29:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009060,
+        "end_time_iso": "2026-10-03T06:31:00+00:00",
+        "results": [],
+        "start_time": 1791009000,
+        "start_time_iso": "2026-10-03T06:30:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009120,
+        "end_time_iso": "2026-10-03T06:32:00+00:00",
+        "results": [],
+        "start_time": 1791009060,
+        "start_time_iso": "2026-10-03T06:31:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009180,
+        "end_time_iso": "2026-10-03T06:33:00+00:00",
+        "results": [],
+        "start_time": 1791009120,
+        "start_time_iso": "2026-10-03T06:32:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009240,
+        "end_time_iso": "2026-10-03T06:34:00+00:00",
+        "results": [],
+        "start_time": 1791009180,
+        "start_time_iso": "2026-10-03T06:33:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009300,
+        "end_time_iso": "2026-10-03T06:35:00+00:00",
+        "results": [],
+        "start_time": 1791009240,
+        "start_time_iso": "2026-10-03T06:34:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009360,
+        "end_time_iso": "2026-10-03T06:36:00+00:00",
+        "results": [],
+        "start_time": 1791009300,
+        "start_time_iso": "2026-10-03T06:35:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009420,
+        "end_time_iso": "2026-10-03T06:37:00+00:00",
+        "results": [],
+        "start_time": 1791009360,
+        "start_time_iso": "2026-10-03T06:36:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009480,
+        "end_time_iso": "2026-10-03T06:38:00+00:00",
+        "results": [],
+        "start_time": 1791009420,
+        "start_time_iso": "2026-10-03T06:37:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009540,
+        "end_time_iso": "2026-10-03T06:39:00+00:00",
+        "results": [],
+        "start_time": 1791009480,
+        "start_time_iso": "2026-10-03T06:38:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009600,
+        "end_time_iso": "2026-10-03T06:40:00+00:00",
+        "results": [],
+        "start_time": 1791009540,
+        "start_time_iso": "2026-10-03T06:39:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009660,
+        "end_time_iso": "2026-10-03T06:41:00+00:00",
+        "results": [],
+        "start_time": 1791009600,
+        "start_time_iso": "2026-10-03T06:40:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009720,
+        "end_time_iso": "2026-10-03T06:42:00+00:00",
+        "results": [],
+        "start_time": 1791009660,
+        "start_time_iso": "2026-10-03T06:41:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009780,
+        "end_time_iso": "2026-10-03T06:43:00+00:00",
+        "results": [],
+        "start_time": 1791009720,
+        "start_time_iso": "2026-10-03T06:42:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009840,
+        "end_time_iso": "2026-10-03T06:44:00+00:00",
+        "results": [],
+        "start_time": 1791009780,
+        "start_time_iso": "2026-10-03T06:43:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009900,
+        "end_time_iso": "2026-10-03T06:45:00+00:00",
+        "results": [],
+        "start_time": 1791009840,
+        "start_time_iso": "2026-10-03T06:44:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791009960,
+        "end_time_iso": "2026-10-03T06:46:00+00:00",
+        "results": [],
+        "start_time": 1791009900,
+        "start_time_iso": "2026-10-03T06:45:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791010020,
+        "end_time_iso": "2026-10-03T06:47:00+00:00",
+        "results": [],
+        "start_time": 1791009960,
+        "start_time_iso": "2026-10-03T06:46:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791010080,
+        "end_time_iso": "2026-10-03T06:48:00+00:00",
+        "results": [],
+        "start_time": 1791010020,
+        "start_time_iso": "2026-10-03T06:47:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791010140,
+        "end_time_iso": "2026-10-03T06:49:00+00:00",
+        "results": [],
+        "start_time": 1791010080,
+        "start_time_iso": "2026-10-03T06:48:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791010200,
+        "end_time_iso": "2026-10-03T06:50:00+00:00",
+        "results": [],
+        "start_time": 1791010140,
+        "start_time_iso": "2026-10-03T06:49:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791010260,
+        "end_time_iso": "2026-10-03T06:51:00+00:00",
+        "results": [],
+        "start_time": 1791010200,
+        "start_time_iso": "2026-10-03T06:50:00+00:00"
+      }
+    ],
+    "has_more": false,
+    "next_page": null
+  }
+}

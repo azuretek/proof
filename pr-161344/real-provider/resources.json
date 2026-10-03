@@ -1,0 +1,10 @@
+{
+  "projectId": "<project-id>",
+  "serviceAccountId": "<service-account-id>",
+  "keyId": "<key-id>",
+  "createdAt": "2026-10-03T05:36:05.415Z",
+  "windowStart": "2026-10-03T05:36:24.953Z",
+  "revokedAt": "2026-10-03T05:36:45.209Z",
+  "windowEnd": "2026-10-03T05:37:14.051Z",
+  "hostResponsesTotal": 4
+}

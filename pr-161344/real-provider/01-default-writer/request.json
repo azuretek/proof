@@ -1,0 +1,9 @@
+{
+  "tool": "lobster",
+  "args": {
+    "action": "run",
+    "pipeline": "llm.invoke --provider embedded --prompt pr161344-final-default --state-key f1"
+  },
+  "sessionKey": "main",
+  "agentId": "main"
+}

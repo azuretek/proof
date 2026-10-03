@@ -1,0 +1,16 @@
+2026-10-03T05:36:30.687+00:00 [agents/tool-policy] tool policy removed 35 tool(s) via agents.main.tools.allow: agents_list, agents_wait, ask_user, automations, computer, conversations_list, conversations_send, conversations_turn, create_goal, dashboard, gateway, get_goal, message, mobile_ui, nodes, openclaw, plugins, presence, secrets, session_status, sessions, sessions_history, sessions_list, sessions_search, sessions_send, sessions_spawn, sessions_yield, skill_workshop, subagents, terminal, theme, tts, update_goal, web_fetch, web_search
+2026-10-03T05:36:30.692+00:00 [plugins] lobster plugin runtime=2026.9.7
+2026-10-03T05:36:30.697+00:00 [diagnostic] lane enqueue: lane=background:plugin:lobster queueSize=1
+2026-10-03T05:36:30.699+00:00 [diagnostic] lane dequeue: lane=background:plugin:lobster waitMs=2 queueSize=0
+2026-10-03T05:36:30.747+00:00 [provider-transport-fetch] [model-fetch] start provider=openai-paid api=openai-responses model=gpt-5.4-nano method=POST url=https://api.openai.com/v1/responses timeoutMs=undefined proxy=none policy=custom
+2026-10-03T05:36:30.752+00:00 [scheduler] running startup:handler-prewarm
+2026-10-03T05:36:31.003+00:00 [scheduler] running startup:handler-prewarm
+2026-10-03T05:36:31.255+00:00 [scheduler] running startup:handler-prewarm
+2026-10-03T05:36:31.324+00:00 [provider-transport-fetch] [model-fetch] response provider=openai-paid api=openai-responses model=gpt-5.4-nano status=200 elapsedMs=578 dispatcher=reused contentType=text/event-stream; charset=utf-8
+2026-10-03T05:36:31.476+00:00 [diagnostic] lane task done: lane=background:plugin:lobster durationMs=777 active=0 queued=0
+2026-10-03T05:36:31.507+00:00 [scheduler] running startup:handler-prewarm
+2026-10-03T05:36:31.759+00:00 [scheduler] running startup:handler-prewarm
+2026-10-03T05:36:32.010+00:00 [scheduler] running startup:handler-prewarm
+2026-10-03T05:36:32.261+00:00 [scheduler] running startup:handler-prewarm
+2026-10-03T05:36:32.511+00:00 [scheduler] running startup:handler-prewarm
+2026-10-03T05:36:32.763+00:00 [scheduler] running startup:handler-prewarm

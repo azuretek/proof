@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "body": {
+    "id": "<project-id>",
+    "object": "organization.project",
+    "created_at": 1791005764,
+    "status": "archived",
+    "archived_at": 1791010283,
+    "name": "pr161344-final-proof",
+    "residency": "GLOBAL"
+  }
+}

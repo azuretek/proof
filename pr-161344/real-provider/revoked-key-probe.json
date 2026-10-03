@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-03T05:36:45.429Z",
+  "status": 401,
+  "body": {
+    "error": {
+      "message": "Incorrect API key provided: <redacted-service-key>. You can find your API key at https://platform.openai.com/account/api-keys.",
+      "type": "invalid_request_error",
+      "param": null,
+      "code": "invalid_api_key"
+    }
+  }
+}

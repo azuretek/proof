@@ -1,0 +1,52 @@
+[
+  {
+    "id": "01-default-writer",
+    "admin": false,
+    "pipeline": "llm.invoke --provider embedded --prompt pr161344-final-default --state-key f1",
+    "startedAt": "2026-10-03T05:36:24.955Z",
+    "finishedAt": "2026-10-03T05:36:30.579Z",
+    "http": 200,
+    "hostResponsesBefore": 0,
+    "hostResponsesAfter": 1
+  },
+  {
+    "id": "02-repeat-refresh-false",
+    "admin": false,
+    "pipeline": "llm.invoke --provider embedded --prompt pr161344-final-default --state-key f1 --refresh false",
+    "startedAt": "2026-10-03T05:36:30.587Z",
+    "finishedAt": "2026-10-03T05:36:32.984Z",
+    "http": 200,
+    "hostResponsesBefore": 1,
+    "hostResponsesAfter": 2
+  },
+  {
+    "id": "03-override-writer",
+    "admin": false,
+    "pipeline": "llm.invoke --provider embedded --model openai-paid/gpt-5.4-nano --prompt pr161344-final-override",
+    "startedAt": "2026-10-03T05:36:32.987Z",
+    "finishedAt": "2026-10-03T05:36:34.546Z",
+    "http": 500,
+    "hostResponsesBefore": 2,
+    "hostResponsesAfter": 2
+  },
+  {
+    "id": "04-override-admin",
+    "admin": true,
+    "pipeline": "llm.invoke --provider embedded --model openai-paid/gpt-5.4-nano --prompt pr161344-final-override",
+    "startedAt": "2026-10-03T05:36:34.550Z",
+    "finishedAt": "2026-10-03T05:36:37.232Z",
+    "http": 200,
+    "hostResponsesBefore": 2,
+    "hostResponsesAfter": 3
+  },
+  {
+    "id": "05-after-provider-revocation",
+    "admin": true,
+    "pipeline": "llm.invoke --provider embedded --prompt pr161344-final-revoked",
+    "startedAt": "2026-10-03T05:37:04.476Z",
+    "finishedAt": "2026-10-03T05:37:07.946Z",
+    "http": 500,
+    "hostResponsesBefore": 0,
+    "hostResponsesAfter": 1
+  }
+]

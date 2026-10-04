@@ -1,0 +1,10 @@
+{
+  "projectId": "<project-id>",
+  "serviceAccountId": "<service-account-id>",
+  "keyId": "<key-id>",
+  "createdAt": "2026-10-04T01:11:14.267Z",
+  "windowStart": "2026-10-04T01:11:37.311Z",
+  "revokedAt": "2026-10-04T01:11:56.224Z",
+  "windowEnd": "2026-10-04T01:12:21.087Z",
+  "acceptedProviderCalls": 5
+}

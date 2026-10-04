@@ -1,0 +1,74 @@
+{
+  "at": "2026-10-04T01:16:29.068Z",
+  "status": 200,
+  "body": {
+    "object": "page",
+    "data": [
+      {
+        "object": "bucket",
+        "end_time": 1791158400,
+        "end_time_iso": "2026-10-05T00:00:00",
+        "results": [
+          {
+            "object": "organization.costs.result",
+            "amount": {
+              "currency": "usd",
+              "value": 0
+            },
+            "api_key_id": null,
+            "api_source": null,
+            "line_item": "gpt-5.4-nano-2026-03-17, cached input",
+            "organization_id": "<organization-id>",
+            "organization_name": "<organization-name>",
+            "project_id": "<project-id>",
+            "project_name": "pr161344-checkpoint-proof",
+            "quantity": 0,
+            "quantity_unit": "tokens",
+            "user_email": null,
+            "user_id": null
+          },
+          {
+            "object": "organization.costs.result",
+            "amount": {
+              "currency": "usd",
+              "value": 0.0000848
+            },
+            "api_key_id": null,
+            "api_source": null,
+            "line_item": "gpt-5.4-nano-2026-03-17, input",
+            "organization_id": "<organization-id>",
+            "organization_name": "<organization-name>",
+            "project_id": "<project-id>",
+            "project_name": "pr161344-checkpoint-proof",
+            "quantity": 424,
+            "quantity_unit": "tokens",
+            "user_email": null,
+            "user_id": null
+          },
+          {
+            "object": "organization.costs.result",
+            "amount": {
+              "currency": "usd",
+              "value": 0.00003125
+            },
+            "api_key_id": null,
+            "api_source": null,
+            "line_item": "gpt-5.4-nano-2026-03-17, output",
+            "organization_id": "<organization-id>",
+            "organization_name": "<organization-name>",
+            "project_id": "<project-id>",
+            "project_name": "pr161344-checkpoint-proof",
+            "quantity": 25,
+            "quantity_unit": "tokens",
+            "user_email": null,
+            "user_id": null
+          }
+        ],
+        "start_time": 1791072000,
+        "start_time_iso": "2026-10-04T00:00:00"
+      }
+    ],
+    "has_more": false,
+    "next_page": null
+  }
+}

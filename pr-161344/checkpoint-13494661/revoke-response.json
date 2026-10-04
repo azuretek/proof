@@ -1,0 +1,8 @@
+{
+  "status": 200,
+  "body": {
+    "id": "<key-id>",
+    "object": "organization.project.api_key.deleted",
+    "deleted": true
+  }
+}

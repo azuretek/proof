@@ -1,0 +1,9 @@
+{
+  "tool": "lobster",
+  "args": {
+    "action": "run",
+    "pipeline": "llm.invoke --provider embedded --model openai-paid/gpt-5.4-nano --prompt pr161344-rk-checkpoint | approve --emit --prompt use-answer"
+  },
+  "sessionKey": "main",
+  "agentId": "main"
+}

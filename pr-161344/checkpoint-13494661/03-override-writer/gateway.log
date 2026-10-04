@@ -1,0 +1,4 @@
+2026-10-04T01:11:43.180+00:00 [agents/tool-policy] tool policy removed 36 tool(s) via agents.main.tools.allow: agents_list, agents_wait, ask_user, automations, computer, conversations_list, conversations_send, conversations_turn, create_goal, dashboard, gateway, get_goal, message, mobile_ui, nodes, openclaw, personal_instructions, plugins, presence, secrets, session_status, sessions, sessions_history, sessions_list, sessions_search, sessions_send, sessions_spawn, sessions_yield, skill_workshop, subagents, terminal, theme, tts, update_goal, web_fetch, web_search
+2026-10-04T01:11:43.183+00:00 [plugins] lobster plugin runtime=2026.9.8
+2026-10-04T01:11:43.188+00:00 [tools-invoke] tool execution failed: Error: llm.invoke request failed: provider/model override is not authorized for this plugin subagent run.
+2026-10-04T01:11:43.994+00:00 [scheduler] running startup:handler-prewarm

@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "body": {
+    "id": "<project-id>",
+    "object": "organization.project",
+    "created_at": 1791076273,
+    "status": "archived",
+    "archived_at": 1791076589,
+    "name": "pr161344-checkpoint-proof",
+    "residency": "GLOBAL"
+  }
+}

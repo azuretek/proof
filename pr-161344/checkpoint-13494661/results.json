@@ -1,0 +1,157 @@
+[
+  {
+    "id": "01-default-admin",
+    "admin": true,
+    "agentId": "main",
+    "args": {
+      "action": "run",
+      "pipeline": "llm.invoke --provider embedded --prompt pr161344-rk-default --state-key r1"
+    },
+    "startedAt": "2026-10-04T01:11:37.312Z",
+    "finishedAt": "2026-10-04T01:11:40.890Z",
+    "http": 200,
+    "status": "ok",
+    "resumeTokenIssued": false,
+    "providerAttemptsBefore": 0,
+    "providerAttemptsAfter": 1,
+    "error": null
+  },
+  {
+    "id": "02-repeat-refresh-false",
+    "admin": true,
+    "agentId": "main",
+    "args": {
+      "action": "run",
+      "pipeline": "llm.invoke --provider embedded --prompt pr161344-rk-default --state-key r1 --refresh false"
+    },
+    "startedAt": "2026-10-04T01:11:40.891Z",
+    "finishedAt": "2026-10-04T01:11:43.122Z",
+    "http": 200,
+    "status": "ok",
+    "resumeTokenIssued": false,
+    "providerAttemptsBefore": 1,
+    "providerAttemptsAfter": 2,
+    "error": null
+  },
+  {
+    "id": "03-override-writer",
+    "admin": false,
+    "agentId": "main",
+    "args": {
+      "action": "run",
+      "pipeline": "llm.invoke --provider embedded --model openai-paid/gpt-5.4-nano --prompt pr161344-rk-override"
+    },
+    "startedAt": "2026-10-04T01:11:43.122Z",
+    "finishedAt": "2026-10-04T01:11:44.392Z",
+    "http": 500,
+    "status": null,
+    "resumeTokenIssued": false,
+    "providerAttemptsBefore": 2,
+    "providerAttemptsAfter": 2,
+    "error": "{\"ok\":false,\"error\":{\"type\":\"tool_error\",\"message\":\"tool execution failed\"}}"
+  },
+  {
+    "id": "04-override-admin",
+    "admin": true,
+    "agentId": "main",
+    "args": {
+      "action": "run",
+      "pipeline": "llm.invoke --provider embedded --model openai-paid/gpt-5.4-nano --prompt pr161344-rk-override"
+    },
+    "startedAt": "2026-10-04T01:11:44.393Z",
+    "finishedAt": "2026-10-04T01:11:46.690Z",
+    "http": 200,
+    "status": "ok",
+    "resumeTokenIssued": false,
+    "providerAttemptsBefore": 2,
+    "providerAttemptsAfter": 3,
+    "error": null
+  },
+  {
+    "id": "05-checkpoint-admin",
+    "admin": true,
+    "agentId": "main",
+    "args": {
+      "action": "run",
+      "pipeline": "llm.invoke --provider embedded --model openai-paid/gpt-5.4-nano --prompt pr161344-rk-checkpoint | approve --emit --prompt use-answer"
+    },
+    "startedAt": "2026-10-04T01:11:46.691Z",
+    "finishedAt": "2026-10-04T01:11:48.797Z",
+    "http": 200,
+    "status": "needs_approval",
+    "resumeTokenIssued": true,
+    "providerAttemptsBefore": 3,
+    "providerAttemptsAfter": 4,
+    "error": null
+  },
+  {
+    "id": "06-resume-writer-refused",
+    "admin": false,
+    "agentId": "main",
+    "args": {
+      "approve": true,
+      "action": "resume",
+      "token": "eyJwcm90b2NvbFZlcnNpb24iOjEsInYiOjEsImtpbmQiOiJwaXBlbGluZS1yZXN1bWUiLCJzdGF0ZUtleSI6InBpcGVsaW5lX3Jlc3VtZV85OTczZWQ3OC0yNjJkLTQxNDYtODhkNi1iNmVkNDExMmI0YmQifQ"
+    },
+    "startedAt": "2026-10-04T01:11:48.798Z",
+    "finishedAt": "2026-10-04T01:11:50.058Z",
+    "http": 500,
+    "status": null,
+    "resumeTokenIssued": false,
+    "providerAttemptsBefore": 4,
+    "providerAttemptsAfter": 4,
+    "error": "{\"ok\":false,\"error\":{\"type\":\"tool_error\",\"message\":\"tool execution failed\"}}"
+  },
+  {
+    "id": "07-checkpoint-admin-2",
+    "admin": true,
+    "agentId": "main",
+    "args": {
+      "action": "run",
+      "pipeline": "llm.invoke --provider embedded --prompt pr161344-rk-checkpoint2 | approve --emit --prompt use-answer"
+    },
+    "startedAt": "2026-10-04T01:11:50.059Z",
+    "finishedAt": "2026-10-04T01:11:52.700Z",
+    "http": 200,
+    "status": "needs_approval",
+    "resumeTokenIssued": true,
+    "providerAttemptsBefore": 4,
+    "providerAttemptsAfter": 5,
+    "error": null
+  },
+  {
+    "id": "08-resume-admin-allowed",
+    "admin": true,
+    "agentId": "main",
+    "args": {
+      "approve": true,
+      "action": "resume",
+      "token": "eyJwcm90b2NvbFZlcnNpb24iOjEsInYiOjEsImtpbmQiOiJwaXBlbGluZS1yZXN1bWUiLCJzdGF0ZUtleSI6InBpcGVsaW5lX3Jlc3VtZV9iZmM5OTlkNC0wNjYxLTQ0NTktOTA5Ny1kYmQ1MjA0YjA2YzQifQ"
+    },
+    "startedAt": "2026-10-04T01:11:52.701Z",
+    "finishedAt": "2026-10-04T01:11:53.969Z",
+    "http": 200,
+    "status": "ok",
+    "resumeTokenIssued": false,
+    "providerAttemptsBefore": 5,
+    "providerAttemptsAfter": 5,
+    "error": null
+  },
+  {
+    "id": "09-after-provider-revocation",
+    "admin": true,
+    "agentId": "main",
+    "args": {
+      "action": "run",
+      "pipeline": "llm.invoke --provider embedded --prompt pr161344-rk-revoked"
+    },
+    "startedAt": "2026-10-04T01:12:17.402Z",
+    "finishedAt": "2026-10-04T01:12:19.539Z",
+    "http": 500,
+    "status": null,
+    "resumeTokenIssued": false,
+    "providerAttemptsBefore": 0,
+    "providerAttemptsAfter": 1,
+    "error": "{\"ok\":false,\"error\":{\"type\":\"tool_error\",\"message\":\"tool execution failed\"}}"
+  }
+]

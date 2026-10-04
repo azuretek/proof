@@ -1,0 +1,21 @@
+2026-10-04T01:12:17.561+00:00 [agents/tool-policy] tool policy removed 36 tool(s) via agents.main.tools.allow: agents_list, agents_wait, ask_user, automations, computer, conversations_list, conversations_send, conversations_turn, create_goal, dashboard, gateway, get_goal, message, mobile_ui, nodes, openclaw, plugins, portal, presence, secrets, session_status, sessions, sessions_history, sessions_list, sessions_search, sessions_send, sessions_spawn, sessions_yield, skill_workshop, subagents, terminal, theme, tts, update_goal, web_fetch, web_search
+2026-10-04T01:12:17.574+00:00 [plugins] lobster plugin runtime=2026.9.8
+2026-10-04T01:12:17.712+00:00 [diagnostic] lane enqueue: lane=background:plugin:lobster queueSize=1
+2026-10-04T01:12:17.713+00:00 [diagnostic] lane dequeue: lane=background:plugin:lobster waitMs=2 queueSize=0
+2026-10-04T01:12:17.847+00:00 [provider-transport-fetch] [model-fetch] start provider=openai-paid api=openai-responses model=gpt-5.4-nano method=POST url=https://api.openai.com/v1/responses timeoutMs=undefined proxy=none policy=custom
+2026-10-04T01:12:17.852+00:00 [scheduler] running startup:post-ready-work
+2026-10-04T01:12:17.919+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T01:12:17.982+00:00 [scheduler] running update.check
+2026-10-04T01:12:17.983+00:00 [scheduler] running update.remote-model-catalog
+2026-10-04T01:12:17.993+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T01:12:18.140+00:00 [provider-transport-fetch] [model-fetch] response provider=openai-paid api=openai-responses model=gpt-5.4-nano status=401 elapsedMs=291 dispatcher=new contentType=text/plain
+2026-10-04T01:12:18.325+00:00 [model-fallback/decision] model fallback decision: decision=candidate_failed requested=openai-paid/gpt-5.4-nano candidate=openai-paid/gpt-5.4-nano reason=auth next=none detail=Isolated completion failed with stop reason error.
+2026-10-04T01:12:18.330+00:00 [diagnostic] lane task error: lane=background:plugin:lobster durationMs=613 error="Isolated completion failed with stop reason error. | output-rejected | {\"status\":401,\"code\":\"token_invalidated\",\"message\":\"401 Your API key has been invalidated.\",\"provider\":\"openai-paid\",\"details\":[\"{\\\"code\\\":\\\"token_invalidated\\\",\\\"message\\\":\\\"Your API key has been invalidated.\\\",\\\"param\\\":null,\\\"type\\\":null}\",\"Your API key has been invalidated.\",\"token_invalidated\"]}" errorName=FailoverError
+2026-10-04T01:12:18.332+00:00 [tools-invoke] tool execution failed: Error: llm.invoke request failed: Isolated completion failed with stop reason error.
+2026-10-04T01:12:18.339+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T01:12:18.340+00:00 [scheduler] running delivery:session-recovery
+2026-10-04T01:12:18.446+00:00 [hooks] running gateway_start (1 handlers)
+2026-10-04T01:12:18.590+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T01:12:18.853+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T01:12:19.104+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T01:12:19.355+00:00 [scheduler] running startup:handler-prewarm

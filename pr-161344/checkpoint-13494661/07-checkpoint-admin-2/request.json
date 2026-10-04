@@ -1,0 +1,9 @@
+{
+  "tool": "lobster",
+  "args": {
+    "action": "run",
+    "pipeline": "llm.invoke --provider embedded --prompt pr161344-rk-checkpoint2 | approve --emit --prompt use-answer"
+  },
+  "sessionKey": "main",
+  "agentId": "main"
+}

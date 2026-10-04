@@ -1,0 +1,102 @@
+{
+  "at": "2026-10-04T01:16:29.067Z",
+  "status": 200,
+  "body": {
+    "object": "page",
+    "data": [
+      {
+        "object": "bucket",
+        "end_time": 1791076200,
+        "end_time_iso": "2026-10-04T01:10:00+00:00",
+        "results": [],
+        "start_time": 1791076140,
+        "start_time_iso": "2026-10-04T01:09:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791076260,
+        "end_time_iso": "2026-10-04T01:11:00+00:00",
+        "results": [],
+        "start_time": 1791076200,
+        "start_time_iso": "2026-10-04T01:10:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791076320,
+        "end_time_iso": "2026-10-04T01:12:00+00:00",
+        "results": [
+          {
+            "object": "organization.usage.completions.result",
+            "project_id": null,
+            "num_model_requests": 5,
+            "user_id": null,
+            "api_key_id": null,
+            "model": "gpt-5.4-nano-2026-03-17",
+            "batch": null,
+            "service_tier": null,
+            "input_tokens": 424,
+            "output_tokens": 25,
+            "input_cached_tokens": 0,
+            "input_cache_write_tokens": 0,
+            "input_cache_write_12h_tokens": 0,
+            "input_uncached_tokens": 424,
+            "input_text_tokens": 424,
+            "output_text_tokens": 25,
+            "input_cached_text_tokens": 0,
+            "input_audio_tokens": 0,
+            "input_cached_audio_tokens": 0,
+            "output_audio_tokens": 0,
+            "input_image_tokens": 0,
+            "input_cached_image_tokens": 0,
+            "output_image_tokens": 0,
+            "api_source": null
+          }
+        ],
+        "start_time": 1791076260,
+        "start_time_iso": "2026-10-04T01:11:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791076380,
+        "end_time_iso": "2026-10-04T01:13:00+00:00",
+        "results": [],
+        "start_time": 1791076320,
+        "start_time_iso": "2026-10-04T01:12:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791076440,
+        "end_time_iso": "2026-10-04T01:14:00+00:00",
+        "results": [],
+        "start_time": 1791076380,
+        "start_time_iso": "2026-10-04T01:13:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791076500,
+        "end_time_iso": "2026-10-04T01:15:00+00:00",
+        "results": [],
+        "start_time": 1791076440,
+        "start_time_iso": "2026-10-04T01:14:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791076560,
+        "end_time_iso": "2026-10-04T01:16:00+00:00",
+        "results": [],
+        "start_time": 1791076500,
+        "start_time_iso": "2026-10-04T01:15:00+00:00"
+      },
+      {
+        "object": "bucket",
+        "end_time": 1791076620,
+        "end_time_iso": "2026-10-04T01:17:00+00:00",
+        "results": [],
+        "start_time": 1791076560,
+        "start_time_iso": "2026-10-04T01:16:00+00:00"
+      }
+    ],
+    "has_more": false,
+    "next_page": null
+  }
+}

@@ -1,0 +1,4 @@
+2026-10-04T05:36:29.491+00:00 [agents/tool-policy] tool policy removed 37 tool(s) via agents.main.tools.allow: agents_list, agents_wait, ask_user, automations, computer, conversations_list, conversations_send, conversations_turn, create_goal, dashboard, gateway, get_goal, message, mobile_ui, nodes, openclaw, personal_instructions, plugins, portal, presence, secrets, session_status, sessions, sessions_history, sessions_list, sessions_search, sessions_send, sessions_spawn, sessions_yield, skill_workshop, subagents, terminal, theme, tts, update_goal, web_fetch, web_search
+2026-10-04T05:36:29.497+00:00 [plugins] lobster plugin runtime=2026.9.8
+2026-10-04T05:36:29.501+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:29.499+00:00 [tools-invoke] tool execution failed: Error: llm.invoke could not resolve a provider. Set --provider or LOBSTER_LLM_PROVIDER

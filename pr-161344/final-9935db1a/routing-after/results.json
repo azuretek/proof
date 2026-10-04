@@ -1,0 +1,74 @@
+[
+  {
+    "id": "01-default",
+    "http": 200,
+    "before": {
+      "host": 0,
+      "stub": 0
+    },
+    "after": {
+      "host": 2,
+      "stub": 2
+    }
+  },
+  {
+    "id": "02-repeat-refresh-false",
+    "http": 200,
+    "before": {
+      "host": 2,
+      "stub": 2
+    },
+    "after": {
+      "host": 4,
+      "stub": 4
+    }
+  },
+  {
+    "id": "03-override-refused",
+    "http": 500,
+    "before": {
+      "host": 4,
+      "stub": 4
+    },
+    "after": {
+      "host": 4,
+      "stub": 4
+    }
+  },
+  {
+    "id": "04-override-allowed",
+    "http": 200,
+    "before": {
+      "host": 4,
+      "stub": 4
+    },
+    "after": {
+      "host": 5,
+      "stub": 5
+    }
+  },
+  {
+    "id": "05-pinned-failure",
+    "http": 500,
+    "before": {
+      "host": 5,
+      "stub": 5
+    },
+    "after": {
+      "host": 6,
+      "stub": 6
+    }
+  },
+  {
+    "id": "06-no-provider",
+    "http": 500,
+    "before": {
+      "host": 6,
+      "stub": 6
+    },
+    "after": {
+      "host": 6,
+      "stub": 6
+    }
+  }
+]

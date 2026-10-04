@@ -1,0 +1,9 @@
+{
+  "tool": "lobster",
+  "args": {
+    "action": "run",
+    "pipeline": "llm.invoke --provider embedded --model stub/pinned-broken --prompt auth-pinned"
+  },
+  "sessionKey": "main",
+  "agentId": "main"
+}

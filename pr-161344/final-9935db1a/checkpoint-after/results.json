@@ -1,0 +1,138 @@
+[
+  {
+    "id": "01-admin-run-embedded",
+    "who": "admin",
+    "agentId": "main",
+    "http": 200,
+    "status": "needs_approval",
+    "hasToken": true,
+    "hasApprovalId": true,
+    "before": {
+      "host": 0,
+      "stub": 0
+    },
+    "after": {
+      "host": 1,
+      "stub": 1
+    }
+  },
+  {
+    "id": "02-writer-equivalent-token",
+    "who": "writer",
+    "agentId": "main",
+    "http": 500,
+    "status": null,
+    "hasToken": false,
+    "hasApprovalId": false,
+    "before": {
+      "host": 1,
+      "stub": 1
+    },
+    "after": {
+      "host": 1,
+      "stub": 1
+    }
+  },
+  {
+    "id": "03-writer-original-token",
+    "who": "writer",
+    "agentId": "main",
+    "http": 500,
+    "status": null,
+    "hasToken": false,
+    "hasApprovalId": false,
+    "before": {
+      "host": 1,
+      "stub": 1
+    },
+    "after": {
+      "host": 1,
+      "stub": 1
+    }
+  },
+  {
+    "id": "04-admin-resume-A",
+    "who": "admin",
+    "agentId": "main",
+    "http": 200,
+    "status": "ok",
+    "hasToken": false,
+    "hasApprovalId": false,
+    "before": {
+      "host": 1,
+      "stub": 1
+    },
+    "after": {
+      "host": 1,
+      "stub": 1
+    }
+  },
+  {
+    "id": "05-admin-run-plain",
+    "who": "admin",
+    "agentId": "main",
+    "http": 200,
+    "status": "needs_approval",
+    "hasToken": true,
+    "hasApprovalId": true,
+    "before": {
+      "host": 1,
+      "stub": 1
+    },
+    "after": {
+      "host": 1,
+      "stub": 1
+    }
+  },
+  {
+    "id": "06-admin-run-embedded-2",
+    "who": "admin",
+    "agentId": "main",
+    "http": 200,
+    "status": "needs_approval",
+    "hasToken": true,
+    "hasApprovalId": true,
+    "before": {
+      "host": 1,
+      "stub": 1
+    },
+    "after": {
+      "host": 2,
+      "stub": 2
+    }
+  },
+  {
+    "id": "07-writer-conflicting-handles",
+    "who": "writer",
+    "agentId": "main",
+    "http": 500,
+    "status": null,
+    "hasToken": false,
+    "hasApprovalId": false,
+    "before": {
+      "host": 2,
+      "stub": 2
+    },
+    "after": {
+      "host": 2,
+      "stub": 2
+    }
+  },
+  {
+    "id": "08-admin-resume-C",
+    "who": "admin",
+    "agentId": "main",
+    "http": 200,
+    "status": "ok",
+    "hasToken": false,
+    "hasApprovalId": false,
+    "before": {
+      "host": 2,
+      "stub": 2
+    },
+    "after": {
+      "host": 2,
+      "stub": 2
+    }
+  }
+]

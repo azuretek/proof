@@ -1,0 +1,9 @@
+{
+  "tool": "lobster",
+  "args": {
+    "action": "run",
+    "pipeline": "llm.invoke --provider embedded --model stub/other --prompt fix2-c | approve --emit --prompt use-answer"
+  },
+  "sessionKey": "main",
+  "agentId": "main"
+}

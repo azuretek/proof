@@ -1,0 +1,10 @@
+2026-10-04T05:34:48Z
+repo HEAD: 9935db1aad19c2da254801c96d2f1116ccc91498
+05:34:48 quiet 1/3 (load 0.00 0.00)
+05:34:58 quiet 2/3 (load 0.00 0.00)
+05:35:08 quiet 3/3 (load 0.00 0.00)
+05:35:08 host quiet, starting
+[http] impers is not usable on this host (the impers transport is not installed here: Cannot find package 'impers' imported from /home/azuretek/proof-161344/p1-re); every request uses the curl transport, with curl's own TLS fingerprint
+P1_RUN_STATE=done
+[http] impers is not usable on this host (the impers transport is not installed here: Cannot find package 'impers' imported from /home/azuretek/proof-161344/exact); every request uses the curl transport, with curl's own TLS fingerprint
+

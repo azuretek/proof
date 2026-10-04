@@ -1,0 +1,18 @@
+2026-10-04T05:36:26.169+00:00 [agents/tool-policy] tool policy removed 35 tool(s) via agents.main.tools.allow: agents_list, agents_wait, ask_user, automations, computer, conversations_list, conversations_send, conversations_turn, create_goal, dashboard, gateway, get_goal, message, mobile_ui, nodes, openclaw, plugins, presence, secrets, session_status, sessions, sessions_history, sessions_list, sessions_search, sessions_send, sessions_spawn, sessions_yield, skill_workshop, subagents, terminal, theme, tts, update_goal, web_fetch, web_search
+2026-10-04T05:36:26.179+00:00 [plugins] lobster plugin runtime=2026.9.8
+2026-10-04T05:36:26.350+00:00 [diagnostic] lane enqueue: lane=background:plugin:lobster queueSize=1
+2026-10-04T05:36:26.352+00:00 [diagnostic] lane dequeue: lane=background:plugin:lobster waitMs=3 queueSize=0
+2026-10-04T05:36:26.644+00:00 [provider-transport-fetch] [model-fetch] start provider=stub api=openai-responses model=primary-broken method=POST url=http://127.0.0.1:44081/v1/responses timeoutMs=undefined proxy=none policy=custom
+2026-10-04T05:36:26.720+00:00 [scheduler] running startup:maintenance
+2026-10-04T05:36:26.721+00:00 [scheduler] running startup:post-ready-work
+2026-10-04T05:36:26.842+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:27.002+00:00 [provider-transport-fetch] [model-fetch] response provider=stub api=openai-responses model=primary-broken status=500 elapsedMs=358 dispatcher=new contentType=application/json
+2026-10-04T05:36:27.154+00:00 [provider-transport-fetch] [model-fetch] start provider=stub api=openai-responses model=backup method=POST url=http://127.0.0.1:44081/v1/responses timeoutMs=undefined proxy=none policy=custom
+2026-10-04T05:36:27.190+00:00 [scheduler] running delivery:session-recovery
+2026-10-04T05:36:27.235+00:00 [scheduler] running update.check
+2026-10-04T05:36:27.236+00:00 [scheduler] running update.remote-model-catalog
+2026-10-04T05:36:27.308+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:27.327+00:00 [provider-transport-fetch] [model-fetch] response provider=stub api=openai-responses model=backup status=200 elapsedMs=174 dispatcher=reused contentType=text/event-stream
+2026-10-04T05:36:27.392+00:00 [diagnostic] lane task done: lane=background:plugin:lobster durationMs=1039 active=0 queued=0
+2026-10-04T05:36:27.120+00:00 [model-fallback/decision] model fallback decision: decision=candidate_failed requested=stub/primary-broken candidate=stub/primary-broken reason=server_error next=stub/backup detail=Isolated completion failed with stop reason error.
+2026-10-04T05:36:27.368+00:00 [model-fallback/decision] model fallback decision: decision=candidate_succeeded requested=stub/primary-broken candidate=stub/backup reason=unknown next=none

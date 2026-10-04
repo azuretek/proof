@@ -1,0 +1,15 @@
+2026-10-04T05:36:27.507+00:00 [hooks] running gateway_start (1 handlers)
+2026-10-04T05:36:27.586+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:28.136+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:28.330+00:00 [agents/tool-policy] tool policy removed 35 tool(s) via agents.main.tools.allow: agents_list, agents_wait, ask_user, automations, computer, conversations_list, conversations_send, conversations_turn, create_goal, dashboard, gateway, get_goal, message, mobile_ui, nodes, openclaw, plugins, presence, secrets, session_status, sessions, sessions_history, sessions_list, sessions_search, sessions_send, sessions_spawn, sessions_yield, skill_workshop, subagents, terminal, theme, tts, update_goal, web_fetch, web_search
+2026-10-04T05:36:28.335+00:00 [plugins] lobster plugin runtime=2026.9.8
+2026-10-04T05:36:28.340+00:00 [diagnostic] lane enqueue: lane=background:plugin:lobster queueSize=1
+2026-10-04T05:36:28.342+00:00 [diagnostic] lane dequeue: lane=background:plugin:lobster waitMs=1 queueSize=0
+2026-10-04T05:36:28.376+00:00 [provider-transport-fetch] [model-fetch] start provider=stub api=openai-responses model=primary-broken method=POST url=http://127.0.0.1:44081/v1/responses timeoutMs=undefined proxy=none policy=custom
+2026-10-04T05:36:28.502+00:00 [provider-transport-fetch] [model-fetch] response provider=stub api=openai-responses model=primary-broken status=500 elapsedMs=123 dispatcher=reused contentType=application/json
+2026-10-04T05:36:28.582+00:00 [provider-transport-fetch] [model-fetch] start provider=stub api=openai-responses model=backup method=POST url=http://127.0.0.1:44081/v1/responses timeoutMs=undefined proxy=none policy=custom
+2026-10-04T05:36:28.589+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:28.604+00:00 [provider-transport-fetch] [model-fetch] response provider=stub api=openai-responses model=backup status=200 elapsedMs=24 dispatcher=reused contentType=text/event-stream
+2026-10-04T05:36:28.637+00:00 [diagnostic] lane task done: lane=background:plugin:lobster durationMs=291 active=0 queued=0
+2026-10-04T05:36:28.534+00:00 [model-fallback/decision] model fallback decision: decision=candidate_failed requested=stub/primary-broken candidate=stub/primary-broken reason=server_error next=stub/backup detail=Isolated completion failed with stop reason error.
+2026-10-04T05:36:28.626+00:00 [model-fallback/decision] model fallback decision: decision=candidate_succeeded requested=stub/primary-broken candidate=stub/backup reason=unknown next=none

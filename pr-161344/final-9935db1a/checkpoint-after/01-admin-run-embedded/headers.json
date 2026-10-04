@@ -1,0 +1,5 @@
+{
+  "x-forwarded-user": "admin@proof.test",
+  "x-forwarded-for": "203.0.113.7",
+  "x-openclaw-scopes": "operator.admin,operator.read,operator.write"
+}

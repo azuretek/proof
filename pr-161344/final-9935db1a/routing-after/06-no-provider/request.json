@@ -1,0 +1,9 @@
+{
+  "tool": "lobster",
+  "args": {
+    "action": "run",
+    "pipeline": "llm.invoke --prompt auth-omitted"
+  },
+  "sessionKey": "main",
+  "agentId": "main"
+}

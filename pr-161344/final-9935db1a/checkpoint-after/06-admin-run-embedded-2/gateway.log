@@ -1,0 +1,9 @@
+2026-10-04T05:35:37.753+00:00 [agents/tool-policy] tool policy removed 37 tool(s) via agents.main.tools.allow: agents_list, agents_wait, ask_user, automations, computer, conversations_list, conversations_send, conversations_turn, create_goal, dashboard, gateway, get_goal, message, mobile_ui, nodes, openclaw, personal_instructions, plugins, portal, presence, secrets, session_status, sessions, sessions_history, sessions_list, sessions_search, sessions_send, sessions_spawn, sessions_yield, skill_workshop, subagents, terminal, theme, tts, update_goal, web_fetch, web_search
+2026-10-04T05:35:37.755+00:00 [plugins] lobster plugin runtime=2026.9.8
+2026-10-04T05:35:37.759+00:00 [diagnostic] lane enqueue: lane=background:plugin:lobster queueSize=1
+2026-10-04T05:35:37.760+00:00 [diagnostic] lane dequeue: lane=background:plugin:lobster waitMs=1 queueSize=0
+2026-10-04T05:35:37.781+00:00 [provider-transport-fetch] [model-fetch] start provider=stub api=openai-responses model=other method=POST url=http://127.0.0.1:44081/v1/responses timeoutMs=undefined proxy=none policy=custom
+2026-10-04T05:35:37.785+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:35:37.790+00:00 [provider-transport-fetch] [model-fetch] response provider=stub api=openai-responses model=other status=200 elapsedMs=8 dispatcher=reused contentType=text/event-stream
+2026-10-04T05:35:37.798+00:00 [diagnostic] lane task done: lane=background:plugin:lobster durationMs=37 active=0 queued=0
+2026-10-04T05:35:38.036+00:00 [scheduler] running startup:handler-prewarm

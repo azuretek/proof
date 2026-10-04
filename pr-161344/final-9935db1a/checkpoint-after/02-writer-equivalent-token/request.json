@@ -1,0 +1,10 @@
+{
+  "tool": "lobster",
+  "args": {
+    "approve": true,
+    "action": "resume",
+    "token": "<resume-token>"
+  },
+  "sessionKey": "main",
+  "agentId": "main"
+}

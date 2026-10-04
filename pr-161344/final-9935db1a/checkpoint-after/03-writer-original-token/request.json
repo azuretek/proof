@@ -1,0 +1,10 @@
+{
+  "tool": "lobster",
+  "args": {
+    "approve": true,
+    "action": "resume",
+    "token": "eyJwcm90b2NvbFZlcnNpb24iOjEsInYiOjEsImtpbmQiOiJwaXBlbGluZS1yZXN1bWUiLCJzdGF0ZUtleSI6InBpcGVsaW5lX3Jlc3VtZV9mZWRhNzc1Ny02Nzk3LTRkZTktYWM0OC02MTRmZTJmNDU1YzgifQ"
+  },
+  "sessionKey": "main",
+  "agentId": "main"
+}

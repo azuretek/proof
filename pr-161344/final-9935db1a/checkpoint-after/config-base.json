@@ -1,0 +1,124 @@
+{
+  "gateway": {
+    "port": 19000,
+    "mode": "local",
+    "bind": "loopback",
+    "trustedProxies": [
+      "127.0.0.1"
+    ],
+    "auth": {
+      "mode": "trusted-proxy",
+      "identityScopes": {
+        "writer@proof.test": [
+          "operator.read",
+          "operator.write"
+        ],
+        "admin@proof.test": [
+          "operator.admin",
+          "operator.read",
+          "operator.write"
+        ]
+      },
+      "trustedProxy": {
+        "userHeader": "x-forwarded-user",
+        "allowUsers": [
+          "writer@proof.test",
+          "admin@proof.test"
+        ],
+        "allowLoopback": true
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "stub/primary-broken",
+        "fallbacks": [
+          "stub/backup"
+        ]
+      },
+      "systemAgent": {
+        "agentId": "main"
+      },
+      "workspace": "~/<run-dir>/workspace"
+    },
+    "ownership": "explicit",
+    "entries": {
+      "main": {
+        "tools": {
+          "allow": [
+            "lobster"
+          ]
+        }
+      },
+      "other": {
+        "tools": {
+          "allow": [
+            "lobster"
+          ]
+        }
+      }
+    }
+  },
+  "plugins": {
+    "allow": [
+      "lobster"
+    ],
+    "entries": {
+      "lobster": {
+        "enabled": true
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "stub": {
+        "baseUrl": "http://127.0.0.1:44081/v1",
+        "api": "openai-responses",
+        "apiKey": "stub-not-a-secret",
+        "models": [
+          {
+            "id": "primary-broken",
+            "name": "primary-broken",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 128000,
+            "maxTokens": 4096
+          },
+          {
+            "id": "backup",
+            "name": "backup",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 128000,
+            "maxTokens": 4096
+          },
+          {
+            "id": "pinned-broken",
+            "name": "pinned-broken",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 128000,
+            "maxTokens": 4096
+          },
+          {
+            "id": "other",
+            "name": "other",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 128000,
+            "maxTokens": 4096
+          }
+        ]
+      }
+    }
+  },
+  "logging": {
+    "level": "debug",
+    "consoleLevel": "debug"
+  }
+}

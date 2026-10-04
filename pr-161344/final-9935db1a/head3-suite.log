@@ -1,0 +1,167 @@
+$ node --import ./scripts/tsx.mjs scripts/test-extension.mts lobster
+[test-extension] Running 4 test files for lobster
+[test-extension-batch] test/vitest/vitest.extension-misc.config.ts: lobster (1 targets)
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.1 [39m[90m/home/azuretek/proof-161344/head3-9935db1a/repo[39m
+
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mresolveLobsterCwd[2m > [22mkeeps relative paths inside the repo root[32m 268[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mbounds the model-visible result for an embedded workflow request[32m 13[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mpasses host-provided LLM adapters into embedded context without adding Gateway credentials[32m 12[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mruns inline pipelines with file-like arguments through the embedded runtime[32m 9[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mdetects workflow files with spaces and parses argsJson[32m 8[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22msurfaces missing workflow path errors[32m 8[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mreturns a parse error when workflow args are invalid JSON[32m 11[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mthrows when the embedded runtime returns an error envelope[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mrejects an input request without a resumable checkpoint[32m 10[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mroutes resume through the embedded runtime[32m 7[2mms[22m[39m
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > forwards approvalId through resume when token is absent 10ms
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mpasses approvalId through the normalized needs_approval envelope[32m 9[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mloads the embedded runtime once per runner[32m 8[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mloads the published package core runtime[33m 395[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mruns native llm.invoke through the host adapter and forwards schema retry context[32m 24[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mleaves the existing openclaw HTTP provider route unshadowed by the embedded adapter[32m 9[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mkeeps a provider-omitted workflow on its configured Gateway HTTP route[32m 17[2mms[22m[39m
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > never serves a saved embedded answer, even with --refresh false (run state: false) 10ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > never serves a saved embedded answer, even with --refresh false (run state: true) 9ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > ignores workflow and step refresh overrides on the embedded route 25ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > writes no embedded answer to the cache or run state 8ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > re-executes an embedded stage on resume rather than replaying it 78ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > authorizes a checkpoint holding embedded output before a resume returns it 58ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > authorizes a workflow checkpoint before a later step consumes embedded output 116ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > carries embedded provenance through later checkpoints of the same run 79ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > authorizes a checkpoint through an equivalent token encoding 53ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > refuses a resume whose authority was revoked mid-flight, before consuming it 53ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > refuses a resume that carries both a token and an approval ID 61ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > records a checkpoint without LLM output as carrying none 59ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > hands an unrecorded checkpoint to the authorizer as unknown 33ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > lets a caller cancel a checkpoint without disclosing it 44ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > refuses to supply the embedded adapter without a checkpoint authorizer 7ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > refuses a provider-omitted stage with no route instead of inferring embedded 8ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > keeps saved-answer reuse on the http route, re-authorizing before it is shown 82ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > keeps saved-answer reuse on the pi route, re-authorizing before it is shown 49ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > keeps saved-answer reuse on the openclaw route, re-authorizing before it is shown 40ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > refuses a saved answer to a caller who is no longer authorized, on run and on resume 118ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > resolves a provider-omitted route from the merged workflow and step environment 70ms
+ ✓  extension-misc  extensions/lobster/src/lobster-runner.test.ts > createEmbeddedLobsterRunner > LLM stage authorization (real Lobster runtime) > refuses to supply the embedded adapter without a replay authorizer 7ms
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mrequires a pipeline for run[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mrequires a checkpoint and a decision for resume[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mrejects invalid or ambiguous resume arguments before touching state: {"responseJson":"{bad"}[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mrejects invalid or ambiguous resume arguments before touching state: {"responseJson":""}[32m 8[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mrejects invalid or ambiguous resume arguments before touching state: {"approve":true,"responseJson":"null"}[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mrejects invalid or ambiguous resume arguments before touching state: {"cancel":true,"responseJson":"null"}[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mrejects invalid or ambiguous resume arguments before touching state: {"cancel":true,"approve":false}[32m 8[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mrejects invalid or ambiguous resume arguments before touching state: {"cancel":false}[32m 6[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mpasses JSON values unchanged on resume: null[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mpasses JSON values unchanged on resume: false[32m 6[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22mpasses JSON values unchanged on resume: [][32m 8[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-runner.test.ts[2m > [22mcreateEmbeddedLobsterRunner[2m > [22maborts long-running embedded work[32m 209[2mms[22m[39m
+[vitest-workers] local cache miss after 6874ms
+node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/resolve-evaluate-options.js (48:0) [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "" in "node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/resolve-evaluate-options.js" may not be preserved when bundling.
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/resolve-evaluate-options.js:48:1 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m48 │[0m ''
+ [38;5;240m   │[0m ─┬  
+ [38;5;240m   │[0m  ╰── module level directive may not be preserved
+ [38;5;240m   │[0m 
+ [38;5;240m   │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m────╯[0m
+
+node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/estree-util-is-declaration.js (11:0) [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "" in "node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/estree-util-is-declaration.js" may not be preserved when bundling.
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/estree-util-is-declaration.js:11:1 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m11 │[0m ''
+ [38;5;240m   │[0m ─┬  
+ [38;5;240m   │[0m  ╰── module level directive may not be preserved
+ [38;5;240m   │[0m 
+ [38;5;240m   │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m────╯[0m
+
+node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/estree-util-create.js (6:0) [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "" in "node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/estree-util-create.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/estree-util-create.js:6:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m6 │[0m ''
+ [38;5;240m  │[0m ─┬  
+ [38;5;240m  │[0m  ╰── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+node_modules/.pnpm/hast-util-to-estree@3.1.3_supports-color@10.2.2/node_modules/hast-util-to-estree/lib/handlers/text.js (9:0) [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "" in "node_modules/.pnpm/hast-util-to-estree@3.1.3_supports-color@10.2.2/node_modules/hast-util-to-estree/lib/handlers/text.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/.pnpm/hast-util-to-estree@3.1.3_supports-color@10.2.2/node_modules/hast-util-to-estree/lib/handlers/text.js:9:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m9 │[0m ''
+ [38;5;240m  │[0m ─┬  
+ [38;5;240m  │[0m  ╰── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+node_modules/.pnpm/hast-util-to-estree@3.1.3_supports-color@10.2.2/node_modules/hast-util-to-estree/lib/handlers/comment.js (12:0) [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "" in "node_modules/.pnpm/hast-util-to-estree@3.1.3_supports-color@10.2.2/node_modules/hast-util-to-estree/lib/handlers/comment.js" may not be preserved when bundling.
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/.pnpm/hast-util-to-estree@3.1.3_supports-color@10.2.2/node_modules/hast-util-to-estree/lib/handlers/comment.js:12:1 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m12 │[0m ''
+ [38;5;240m   │[0m ─┬  
+ [38;5;240m   │[0m  ╰── module level directive may not be preserved
+ [38;5;240m   │[0m 
+ [38;5;240m   │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m────╯[0m
+
+[vitest-workers] prepared 9c250f4834a7 in 62467ms (14416 inputs, 18346 outputs)
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster gateway scope[2m > [22mrefuses the embedded route outside a gateway request scope[32m 16[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster gateway scope[2m > [22mrefuses a saved answer without a request scope[32m 8[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster gateway scope[2m > [22mrefuses a scope that has no authority checker[32m 9[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster gateway scope[2m > [22maccepts the host's current-authority callback[32m 6[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster gateway scope[2m > [22mrejects authority invalidated by the host[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster gateway scope[2m > [22mpropagates a revoked grant from revalidation[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster gateway scope[2m > [22maccepts successful host revalidation[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster gateway scope[2m > [22mchecks authority again after awaited revalidation[32m 8[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster gateway scope[2m > [22mrefuses an aborted request even when callbacks return success[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster gateway scope[2m > [22mchecks cancellation after awaited revalidation[32m 6[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster checkpoint authority[2m > [22mrecords the calling agent and the request's authority[32m 7[2mms[22m[39m
+[90mstderr[2m | retireSqliteTestSingleton (/home/azuretek/proof-161344/head3-9935db1a/repo/test/sqlite-test-lifecycle.ts:217:13)
+[22m[39m[sqlite-test-lifecycle] extensions/lobster/src/lobster-gateway-scope.test.ts: retiring openclaw.stateDatabaseLifecycle
+[sqlite-test-lifecycle] extensions/lobster/src/lobster-gateway-scope.test.ts: retiring openclaw.stateSnapshotOwners
+
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster checkpoint authority[2m > [22mlets a checkpoint without LLM output resume outside a gateway request[32m 10[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster checkpoint authority[2m > [22mtreats an unrecorded checkpoint as a saved answer[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster checkpoint authority[2m > [22mre-checks current authority before stored remote output is consumed[32m 8[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster checkpoint authority[2m > [22mresumes embedded output for the same agent holding the same authority[32m 14[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster checkpoint authority[2m > [22mrefuses embedded output to another agent[32m 9[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster checkpoint authority[2m > [22mrefuses embedded output to a caller that lost authority during the pause[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-gateway-scope.test.ts[2m > [22mlobster checkpoint authority[2m > [22mrefuses embedded output with no recorded producer[32m 9[2mms[22m[39m
+ ✓  extension-misc  extensions/lobster/src/lobster-checkpoint-provenance.test.ts > lobster checkpoint provenance > finds a record by the decoded token identity and by the approval id 14ms
+ ✓  extension-misc  extensions/lobster/src/lobster-checkpoint-provenance.test.ts > lobster checkpoint provenance > resolves an equivalent token encoding to the same record 11ms
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-checkpoint-provenance.test.ts[2m > [22mlobster checkpoint provenance[2m > [22mkeeps the record beside Lobster's checkpoint state, private to the owner[32m 19[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-checkpoint-provenance.test.ts[2m > [22mlobster checkpoint provenance[2m > [22mfails closed on a record it cannot trust[32m 17[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mresumes real pipeline input, preserves invalid answers, and still handles approvals[33m 521[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mresumes real workflow files through successive questions without repeating preparation[32m 134[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mcancels a real input checkpoint without executing its remaining steps[32m 33[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mregisters ordinary execution without a task runtime and keeps sandbox gating[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mroutes native Lobster LLM stages through host-owned isolated completion[32m 10[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mdistinguishes malformed output from JSON null: not-json[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mdistinguishes malformed output from JSON null: null[32m 8[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mrefuses the embedded route without a calling agent rather than running as the plugin owner[32m 8[2mms[22m[39m
+ ✓  extension-misc  extensions/lobster/src/lobster-tool.test.ts > lobster plugin tool > binds the tool to the agent of the calling session 7ms
+ ✓  extension-misc  extensions/lobster/src/lobster-tool.test.ts > lobster plugin tool > propagates host model authorization rejection for an explicit workflow override 7ms
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mrequires an explicit embedded route and refuses a provider-omitted step[32m 6[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mreturns approval envelopes for ordinary runs[32m 6[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mresumes ordinary workflows with approval credentials[32m 6[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mnormalizes numeric string run limits before invoking the runner[32m 6[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mrejects malformed numeric run limits before invoking the runner[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mthrows when the runner returns an error envelope[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mrequires action[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mrejects unknown action[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mrejects absolute cwd[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[46m extension-misc [49m[39m extensions/lobster/src/lobster-tool.test.ts[2m > [22mlobster plugin tool[2m > [22mrejects cwd that escapes the gateway working directory[32m 8[2mms[22m[39m
+[90mstderr[2m | retireSqliteTestSingleton (/home/azuretek/proof-161344/head3-9935db1a/repo/test/sqlite-test-lifecycle.ts:217:13)
+[22m[39m[sqlite-test-lifecycle] extensions/lobster/src/lobster-tool.test.ts: retiring openclaw.stateDatabaseLifecycle
+[sqlite-test-lifecycle] extensions/lobster/src/lobster-tool.test.ts: retiring openclaw.stateSnapshotOwners
+
+
+[2m Test Files [22m [1m[32m4 passed[39m[22m[90m (4)[39m
+[2m      Tests [22m [1m[32m93 passed[39m[22m[90m (93)[39m
+[2m   Start at [22m 04:46:19
+[2m   Duration [22m 84.92s[2m (transform 92%, worker 3%, import 2%, tests 2%, setup 1%)[22m
+
+[vitest-workers] verifying completed generation before cleanup
+[vitest-workers] retained completed compiler outputs for reuse

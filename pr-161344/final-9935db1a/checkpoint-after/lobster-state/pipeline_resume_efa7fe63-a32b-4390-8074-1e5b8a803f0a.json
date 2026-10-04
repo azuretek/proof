@@ -1,0 +1,19 @@
+{
+  "pipeline": [
+    {
+      "name": "approve",
+      "args": {
+        "_": [],
+        "emit": true,
+        "prompt": "fix2-plain"
+      },
+      "raw": "approve --emit --prompt fix2-plain"
+    }
+  ],
+  "resumeAtIndex": 1,
+  "items": [],
+  "haltType": "approval_request",
+  "prompt": "fix2-plain",
+  "supersededResumeStateKeys": [],
+  "createdAt": "2026-10-04T05:35:37.360Z"
+}

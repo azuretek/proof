@@ -1,0 +1,12 @@
+2026-10-04T05:35:35.154+00:00 [scheduler] running startup:post-ready-work
+2026-10-04T05:35:35.334+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:35:35.419+00:00 [scheduler] running update.check
+2026-10-04T05:35:35.420+00:00 [scheduler] running update.remote-model-catalog
+2026-10-04T05:35:35.431+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:35:35.509+00:00 [hooks] running gateway_start (1 handlers)
+2026-10-04T05:35:35.684+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:35:35.948+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:35:36.058+00:00 [agents/tool-policy] tool policy removed 36 tool(s) via agents.main.tools.allow: agents_list, agents_wait, ask_user, automations, computer, conversations_list, conversations_send, conversations_turn, create_goal, dashboard, gateway, get_goal, message, mobile_ui, nodes, openclaw, personal_instructions, plugins, presence, secrets, session_status, sessions, sessions_history, sessions_list, sessions_search, sessions_send, sessions_spawn, sessions_yield, skill_workshop, subagents, terminal, theme, tts, update_goal, web_fetch, web_search
+2026-10-04T05:35:36.061+00:00 [plugins] lobster plugin runtime=2026.9.8
+2026-10-04T05:35:36.097+00:00 [tools-invoke] tool execution failed: Error: lobster checkpoint refused: the caller no longer holds operator.admin, which produced its embedded LLM output
+2026-10-04T05:35:36.246+00:00 [scheduler] running startup:handler-prewarm

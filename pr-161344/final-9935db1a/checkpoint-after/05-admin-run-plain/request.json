@@ -1,0 +1,9 @@
+{
+  "tool": "lobster",
+  "args": {
+    "action": "run",
+    "pipeline": "approve --emit --prompt fix2-plain"
+  },
+  "sessionKey": "main",
+  "agentId": "main"
+}

@@ -1,0 +1,127 @@
+[gateway] startup phase: entry.run-main-import starting total=183.1ms
+[gateway] startup phase: entry.run-main-import 54.7ms total=237.9ms start=183.1ms
+[gateway] startup phase: cli.main.gateway-run-select-environment starting total=744.7ms
+[gateway] startup phase: cli.main.gateway-run-select-environment 483.6ms total=1228.3ms start=744.7ms
+[gateway] startup phase: cli.main.gateway-run-imports starting total=1386.6ms
+[gateway] startup phase: cli.main.gateway-run-imports 7.1ms total=1393.8ms start=1386.6ms
+[gateway] startup phase: cli.main.gateway-run-pre-bootstrap starting total=1403.1ms
+[gateway] startup phase: cli.main.gateway-run-pre-bootstrap 9.5ms total=1412.6ms start=1403.1ms
+[gateway] startup phase: cli.main.gateway-run-bootstrap starting total=1412.8ms
+[gateway] startup phase: cli.bootstrap.admission.database-readiness starting total=1517.1ms
+[gateway] startup phase: cli.bootstrap.admission.database-readiness 3.5ms total=1520.6ms start=1517.1ms agentCount=2 schemaProcessCount=0 schemaInspectionCount=0 schemaSnapshotCount=0
+[gateway] startup phase: cli.bootstrap.admission.database-readiness starting total=3008.5ms
+[state/sqlite] SQLite read-only snapshot for ~/<run-dir>/gateway-state/state/openclaw.sqlite: 1.4 MiB, budget 302 seconds
+[gateway] startup phase: cli.bootstrap.admission.database-readiness 676.5ms total=3685.0ms start=3008.5ms agentCount=2 schemaProcessCount=0 schemaInspectionCount=0 schemaSnapshotCount=0
+[state/sqlite] SQLite read-only snapshot for ~/<run-dir>/gateway-state/state/openclaw.sqlite: 1.4 MiB, budget 302 seconds
+[state/sqlite] SQLite read-only snapshot for ~/<run-dir>/gateway-state/state/openclaw.sqlite: 1.4 MiB, budget 302 seconds
+[state/sqlite] SQLite read-only snapshot for ~/<run-dir>/gateway-state/state/openclaw.sqlite: 1.4 MiB, budget 302 seconds
+[state/sqlite] SQLite read-only snapshot for ~/<run-dir>/gateway-state/state/openclaw.sqlite: 1.4 MiB, budget 302 seconds
+[state/sqlite] SQLite read-only snapshot for ~/<run-dir>/gateway-state/state/openclaw.sqlite: 1.4 MiB, budget 302 seconds
+[state/sqlite] SQLite read-only snapshot for ~/<run-dir>/gateway-state/state/openclaw.sqlite: 1.4 MiB, budget 302 seconds
+[gateway] startup phase: cli.main.gateway-run-bootstrap 8851.2ms total=10264.1ms start=1412.8ms
+2026-10-04T05:36:15.407+00:00 [gateway] loading configuration…
+2026-10-04T05:36:15.440+00:00 [gateway] resolving authentication…
+2026-10-04T05:36:15.444+00:00 [gateway] starting...
+2026-10-04T05:36:16.024+00:00 [gateway] shutdown budget at startup: drain=315000ms shutdown=325000ms reserve=10000ms exitMargin=5000ms; source=Gateway stop policy=330000ms
+2026-10-04T05:36:16.186+00:00 [gateway] spawn broker ready pid=307622
+[gateway] startup phase: gateway.server-start-import starting total=11468.1ms
+[gateway] startup phase: gateway.server-start-import 762.4ms total=12230.5ms start=11468.1ms
+2026-10-04T05:36:17.058+00:00 [gateway] startup phase: process.bootstrap 12336.8ms total=12336.8ms
+2026-10-04T05:36:17.064+00:00 [state/sqlite] SQLite state ownership for ~/<run-dir>/gateway-state/state/openclaw.sqlite: 1.8 MiB, budget 303 seconds
+2026-10-04T05:36:17.580+00:00 [gateway] startup phase: state.schema-preflight starting total=12859.2ms
+2026-10-04T05:36:17.596+00:00 [state/sqlite] SQLite read-only snapshot for ~/<run-dir>/gateway-state/state/openclaw.sqlite: 1.8 MiB, budget 303 seconds
+2026-10-04T05:36:18.094+00:00 [gateway] startup phase: state.schema-preflight 514.6ms total=13373.8ms
+2026-10-04T05:36:18.159+00:00 [gateway] startup phase: config.auth starting total=13428.6ms
+2026-10-04T05:36:18.272+00:00 [gateway] startup phase: config.auth 122.2ms total=13550.8ms
+2026-10-04T05:36:19.740+00:00 [gateway] startup phase: startup.maintenance starting total=15018.5ms
+2026-10-04T05:36:19.784+00:00 [gateway] startup phase: startup.maintenance 45.0ms total=15063.5ms
+2026-10-04T05:36:20.523+00:00 [gateway] starting HTTP server...
+2026-10-04T05:36:20.840+00:00 [health-monitor] started (interval: 300s, startup-grace: 60s, channel-connect-grace: 120s)
+2026-10-04T05:36:22.223+00:00 [gateway] startup phase: http.bound 0.1ms total=17502.4ms
+2026-10-04T05:36:22.263+00:00 [gateway] Control UI assets need rebuilding; building them now (rerun `pnpm --dir ~/<checkout> ui:build` after UI changes, or use `pnpm --dir ~/<checkout> ui:dev` while developing the Control UI)…
+2026-10-04T05:36:22.307+00:00 [plugins] loading lobster from ~/<checkout>/dist/extensions/lobster/index.js
+2026-10-04T05:36:22.365+00:00 [plugins] loading memory-core from ~/<checkout>/dist/extensions/memory-core/index.js
+2026-10-04T05:36:22.453+00:00 [plugins] loaded 2 plugin(s) (2 attempted) in 150.8ms
+2026-10-04T05:36:22.484+00:00 [gateway] agent model: stub/primary-broken (thinking=off, fast=off)
+2026-10-04T05:36:22.485+00:00 [gateway] http server listening (2 plugins: lobster, memory-core; 6.5s)
+2026-10-04T05:36:22.486+00:00 [gateway] log file: /tmp/openclaw/openclaw-2026-10-04.log
+2026-10-04T05:36:22.487+00:00 [gateway] Older local CLI/SDK versions can bypass Gateway state mutation routing. Use matching CLI/SDK and Gateway versions; legacy direct writers remain supported.
+2026-10-04T05:36:22.488+00:00 [gateway] native runtime: {"pid":307426,"platform":"linux","arch":"x64","node":"24.19.0","v8":"13.6.233.17-node.51","uv":"1.52.1","openssl":"3.5.7","sqlite":"3.53.3","sqliteClose":{"explicitSqliteCloseReleasesNativeResources":true,"decided":true,"reason":"Node runtime"}}
+2026-10-04T05:36:22.490+00:00 [gateway] worker startup state: {"workerCount":6,"workerLifecycle":[{"script":"gateway-state-owner-heartbeat.worker.js","started":2,"retired":[{"reason":"exit","count":1}]},{"script":"sqlite-store.worker.js","started":1,"retired":[]},{"script":"openclaw-state-lease-heartbeat.worker.js","started":1,"retired":[]},{"script":"worker-native-lifecycle.worker.js","started":1,"retired":[]},{"script":"openclaw-state-read.worker.js","started":2,"retired":[]}],"compute":{"limit":3,"active":0,"waitingPools":0,"pendingTasks":0,"pendingBytes":0}}
+2026-10-04T05:36:22.753+00:00 [gateway] starting channels and sidecars...
+2026-10-04T05:36:23.816+00:00 [plugins] loading lobster from ~/<checkout>/dist/extensions/lobster/index.js
+2026-10-04T05:36:23.822+00:00 [plugins] loaded 1 plugin(s) (1 attempted) in 8.6ms
+2026-10-04T05:36:25.653+00:00 [plugins] memory-core: created managed dreaming cron job.
+2026-10-04T05:36:25.659+00:00 [gateway] startup outcomes: internal-hooks=skipped (not-configured); internal-startup-hook=skipped (no-handlers-loaded); gateway-start-hooks=scheduled; gmail-watcher=skipped (hooks-disabled); gmail-model=skipped (not-configured)
+2026-10-04T05:36:25.663+00:00 [gateway] ready
+2026-10-04T05:36:25.694+00:00 [gateway] startup phase: ready 16.3ms total=20973.7ms
+2026-10-04T05:36:25.745+00:00 [heartbeat] started
+2026-10-04T05:36:26.169+00:00 [agents/tool-policy] tool policy removed 35 tool(s) via agents.main.tools.allow: agents_list, agents_wait, ask_user, automations, computer, conversations_list, conversations_send, conversations_turn, create_goal, dashboard, gateway, get_goal, message, mobile_ui, nodes, openclaw, plugins, presence, secrets, session_status, sessions, sessions_history, sessions_list, sessions_search, sessions_send, sessions_spawn, sessions_yield, skill_workshop, subagents, terminal, theme, tts, update_goal, web_fetch, web_search
+2026-10-04T05:36:26.179+00:00 [plugins] lobster plugin runtime=2026.9.8
+2026-10-04T05:36:26.350+00:00 [diagnostic] lane enqueue: lane=background:plugin:lobster queueSize=1
+2026-10-04T05:36:26.352+00:00 [diagnostic] lane dequeue: lane=background:plugin:lobster waitMs=3 queueSize=0
+2026-10-04T05:36:26.644+00:00 [provider-transport-fetch] [model-fetch] start provider=stub api=openai-responses model=primary-broken method=POST url=http://127.0.0.1:44081/v1/responses timeoutMs=undefined proxy=none policy=custom
+2026-10-04T05:36:26.720+00:00 [scheduler] running startup:maintenance
+2026-10-04T05:36:26.721+00:00 [scheduler] running startup:post-ready-work
+2026-10-04T05:36:26.842+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:27.002+00:00 [provider-transport-fetch] [model-fetch] response provider=stub api=openai-responses model=primary-broken status=500 elapsedMs=358 dispatcher=new contentType=application/json
+2026-10-04T05:36:27.154+00:00 [provider-transport-fetch] [model-fetch] start provider=stub api=openai-responses model=backup method=POST url=http://127.0.0.1:44081/v1/responses timeoutMs=undefined proxy=none policy=custom
+2026-10-04T05:36:27.190+00:00 [scheduler] running delivery:session-recovery
+2026-10-04T05:36:27.235+00:00 [scheduler] running update.check
+2026-10-04T05:36:27.236+00:00 [scheduler] running update.remote-model-catalog
+2026-10-04T05:36:27.308+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:27.327+00:00 [provider-transport-fetch] [model-fetch] response provider=stub api=openai-responses model=backup status=200 elapsedMs=174 dispatcher=reused contentType=text/event-stream
+2026-10-04T05:36:27.392+00:00 [diagnostic] lane task done: lane=background:plugin:lobster durationMs=1039 active=0 queued=0
+2026-10-04T05:36:27.120+00:00 [model-fallback/decision] model fallback decision: decision=candidate_failed requested=stub/primary-broken candidate=stub/primary-broken reason=server_error next=stub/backup detail=Isolated completion failed with stop reason error.
+2026-10-04T05:36:27.368+00:00 [model-fallback/decision] model fallback decision: decision=candidate_succeeded requested=stub/primary-broken candidate=stub/backup reason=unknown next=none
+2026-10-04T05:36:27.507+00:00 [hooks] running gateway_start (1 handlers)
+2026-10-04T05:36:27.586+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:28.136+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:28.330+00:00 [agents/tool-policy] tool policy removed 35 tool(s) via agents.main.tools.allow: agents_list, agents_wait, ask_user, automations, computer, conversations_list, conversations_send, conversations_turn, create_goal, dashboard, gateway, get_goal, message, mobile_ui, nodes, openclaw, plugins, presence, secrets, session_status, sessions, sessions_history, sessions_list, sessions_search, sessions_send, sessions_spawn, sessions_yield, skill_workshop, subagents, terminal, theme, tts, update_goal, web_fetch, web_search
+2026-10-04T05:36:28.335+00:00 [plugins] lobster plugin runtime=2026.9.8
+2026-10-04T05:36:28.340+00:00 [diagnostic] lane enqueue: lane=background:plugin:lobster queueSize=1
+2026-10-04T05:36:28.342+00:00 [diagnostic] lane dequeue: lane=background:plugin:lobster waitMs=1 queueSize=0
+2026-10-04T05:36:28.376+00:00 [provider-transport-fetch] [model-fetch] start provider=stub api=openai-responses model=primary-broken method=POST url=http://127.0.0.1:44081/v1/responses timeoutMs=undefined proxy=none policy=custom
+2026-10-04T05:36:28.502+00:00 [provider-transport-fetch] [model-fetch] response provider=stub api=openai-responses model=primary-broken status=500 elapsedMs=123 dispatcher=reused contentType=application/json
+2026-10-04T05:36:28.582+00:00 [provider-transport-fetch] [model-fetch] start provider=stub api=openai-responses model=backup method=POST url=http://127.0.0.1:44081/v1/responses timeoutMs=undefined proxy=none policy=custom
+2026-10-04T05:36:28.589+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:28.604+00:00 [provider-transport-fetch] [model-fetch] response provider=stub api=openai-responses model=backup status=200 elapsedMs=24 dispatcher=reused contentType=text/event-stream
+2026-10-04T05:36:28.637+00:00 [diagnostic] lane task done: lane=background:plugin:lobster durationMs=291 active=0 queued=0
+2026-10-04T05:36:28.534+00:00 [model-fallback/decision] model fallback decision: decision=candidate_failed requested=stub/primary-broken candidate=stub/primary-broken reason=server_error next=stub/backup detail=Isolated completion failed with stop reason error.
+2026-10-04T05:36:28.626+00:00 [model-fallback/decision] model fallback decision: decision=candidate_succeeded requested=stub/primary-broken candidate=stub/backup reason=unknown next=none
+2026-10-04T05:36:28.820+00:00 [agents/tool-policy] tool policy removed 35 tool(s) via agents.main.tools.allow: agents_list, agents_wait, ask_user, automations, computer, conversations_list, conversations_send, conversations_turn, create_goal, dashboard, gateway, get_goal, message, mobile_ui, nodes, openclaw, plugins, presence, secrets, session_status, sessions, sessions_history, sessions_list, sessions_search, sessions_send, sessions_spawn, sessions_yield, skill_workshop, subagents, terminal, theme, tts, update_goal, web_fetch, web_search
+2026-10-04T05:36:28.830+00:00 [plugins] lobster plugin runtime=2026.9.8
+2026-10-04T05:36:28.839+00:00 [tools-invoke] tool execution failed: Error: llm.invoke request failed: provider/model override is not authorized for this plugin subagent run.
+2026-10-04T05:36:28.869+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:29.112+00:00 [agents/tool-policy] tool policy removed 37 tool(s) via agents.main.tools.allow: agents_list, agents_wait, ask_user, automations, computer, conversations_list, conversations_send, conversations_turn, create_goal, dashboard, gateway, get_goal, message, mobile_ui, nodes, openclaw, personal_instructions, plugins, portal, presence, secrets, session_status, sessions, sessions_history, sessions_list, sessions_search, sessions_send, sessions_spawn, sessions_yield, skill_workshop, subagents, terminal, theme, tts, update_goal, web_fetch, web_search
+2026-10-04T05:36:29.119+00:00 [plugins] lobster plugin runtime=2026.9.8
+2026-10-04T05:36:29.136+00:00 [diagnostic] lane enqueue: lane=background:plugin:lobster queueSize=1
+2026-10-04T05:36:29.138+00:00 [diagnostic] lane dequeue: lane=background:plugin:lobster waitMs=7 queueSize=0
+2026-10-04T05:36:29.205+00:00 [provider-transport-fetch] [model-fetch] start provider=stub api=openai-responses model=other method=POST url=http://127.0.0.1:44081/v1/responses timeoutMs=undefined proxy=none policy=custom
+2026-10-04T05:36:29.214+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:29.218+00:00 [provider-transport-fetch] [model-fetch] response provider=stub api=openai-responses model=other status=200 elapsedMs=15 dispatcher=reused contentType=text/event-stream
+2026-10-04T05:36:29.228+00:00 [diagnostic] lane task done: lane=background:plugin:lobster durationMs=89 active=0 queued=0
+2026-10-04T05:36:29.325+00:00 [agents/tool-policy] tool policy removed 37 tool(s) via agents.main.tools.allow: agents_list, agents_wait, ask_user, automations, computer, conversations_list, conversations_send, conversations_turn, create_goal, dashboard, gateway, get_goal, message, mobile_ui, nodes, openclaw, personal_instructions, plugins, portal, presence, secrets, session_status, sessions, sessions_history, sessions_list, sessions_search, sessions_send, sessions_spawn, sessions_yield, skill_workshop, subagents, terminal, theme, tts, update_goal, web_fetch, web_search
+2026-10-04T05:36:29.328+00:00 [plugins] lobster plugin runtime=2026.9.8
+2026-10-04T05:36:29.332+00:00 [diagnostic] lane enqueue: lane=background:plugin:lobster queueSize=1
+2026-10-04T05:36:29.333+00:00 [diagnostic] lane dequeue: lane=background:plugin:lobster waitMs=1 queueSize=0
+2026-10-04T05:36:29.362+00:00 [provider-transport-fetch] [model-fetch] start provider=stub api=openai-responses model=pinned-broken method=POST url=http://127.0.0.1:44081/v1/responses timeoutMs=undefined proxy=none policy=custom
+2026-10-04T05:36:29.371+00:00 [provider-transport-fetch] [model-fetch] response provider=stub api=openai-responses model=pinned-broken status=500 elapsedMs=8 dispatcher=reused contentType=application/json
+2026-10-04T05:36:29.392+00:00 [model-fallback/decision] model fallback decision: decision=candidate_failed requested=stub/pinned-broken candidate=stub/pinned-broken reason=server_error next=none detail=Isolated completion failed with stop reason error.
+2026-10-04T05:36:29.404+00:00 [diagnostic] lane task error: lane=background:plugin:lobster durationMs=61 error="Isolated completion failed with stop reason error. | output-rejected | {\"status\":500,\"code\":\"500\",\"errorType\":\"server_error\",\"message\":\"500 stub: pinned-broken is down\",\"provider\":\"stub\",\"details\":[\"{\\\"message\\\":\\\"stub: pinned-broken is down\\\",\\\"type\\\":\\\"server_error\\\"}\",\"stub: pinned-broken is down\",\"server_error\"]}" errorName=FailoverError
+2026-10-04T05:36:29.411+00:00 [tools-invoke] tool execution failed: Error: llm.invoke request failed: Isolated completion failed with stop reason error.
+2026-10-04T05:36:29.491+00:00 [agents/tool-policy] tool policy removed 37 tool(s) via agents.main.tools.allow: agents_list, agents_wait, ask_user, automations, computer, conversations_list, conversations_send, conversations_turn, create_goal, dashboard, gateway, get_goal, message, mobile_ui, nodes, openclaw, personal_instructions, plugins, portal, presence, secrets, session_status, sessions, sessions_history, sessions_list, sessions_search, sessions_send, sessions_spawn, sessions_yield, skill_workshop, subagents, terminal, theme, tts, update_goal, web_fetch, web_search
+2026-10-04T05:36:29.497+00:00 [plugins] lobster plugin runtime=2026.9.8
+2026-10-04T05:36:29.501+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:29.499+00:00 [tools-invoke] tool execution failed: Error: llm.invoke could not resolve a provider. Set --provider or LOBSTER_LLM_PROVIDER
+2026-10-04T05:36:29.524+00:00 [gateway] signal SIGTERM received
+2026-10-04T05:36:29.582+00:00 [admission] closed: stop (SIGTERM)
+2026-10-04T05:36:29.583+00:00 [gateway] received SIGTERM; shutting down
+2026-10-04T05:36:29.597+00:00 [gateway] shutdown budget at shutdown: drain=315000ms shutdown=325000ms reserve=10000ms exitMargin=5000ms; source=Gateway stop policy=330000ms
+2026-10-04T05:36:29.615+00:00 [gateway] draining active work before stop with timeout 315000ms: rootRequests=2
+2026-10-04T05:36:29.764+00:00 [scheduler] running startup:handler-prewarm
+2026-10-04T05:36:30.623+00:00 [gateway] active-work drain settled; beginning server close
+2026-10-04T05:36:30.640+00:00 [shutdown] started: gateway stopping
+2026-10-04T05:36:30.661+00:00 [gmail-watcher] gmail watcher stopped
+2026-10-04T05:36:30.665+00:00 [agents/subagent-registry] subagent run sweep skipped: gateway is draining for restart
+2026-10-04T05:36:30.777+00:00 [shutdown] completed cleanly in 139ms

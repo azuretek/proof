@@ -1,0 +1,1 @@
+{"version":1,"stages":[{"provider":"embedded","command":"llm.invoke"}],"caller":{"agentId":"main","authority":["operator.admin","operator.read","operator.write"]}}

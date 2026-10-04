@@ -1,0 +1,6 @@
+2026-10-04T05:36:26.781Z model=primary-broken status=500
+2026-10-04T05:36:27.306Z model=backup status=200
+2026-10-04T05:36:28.383Z model=primary-broken status=500
+2026-10-04T05:36:28.589Z model=backup status=200
+2026-10-04T05:36:29.210Z model=other status=200
+2026-10-04T05:36:29.367Z model=pinned-broken status=500

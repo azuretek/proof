@@ -1,0 +1,28 @@
+2026-10-04T04:42:11Z
+04:42:11 quiet 1/3 (load 0.04 0.06)
+04:42:21 quiet 2/3 (load 0.04 0.06)
+04:42:31 quiet 3/3 (load 0.03 0.06)
+04:42:31 host quiet, starting
+v24.19.0
+INSTALL_EXIT=0
+2026-10-04T04:42:57Z
+BUILD_EXIT=0
+2026-10-04 04:44:48.418473617 +0000 dist/entry.js
+9935db1aad19c2da254801c96d2f1116ccc91498
+SUITE_EXIT=0
+docs/tools/llm-task.md
+docs/tools/lobster.md
+extensions/lobster/README.md
+extensions/lobster/index.ts
+extensions/lobster/src/lobster-checkpoint-provenance.test.ts
+extensions/lobster/src/lobster-checkpoint-provenance.ts
+extensions/lobster/src/lobster-gateway-scope.test.ts
+extensions/lobster/src/lobster-gateway-scope.ts
+extensions/lobster/src/lobster-runner.test.ts
+extensions/lobster/src/lobster-runner.ts
+extensions/lobster/src/lobster-tool.test.ts
+extensions/lobster/src/lobster-tool.ts
+FMT_EXIT=0
+LINT_EXIT=0
+TSGO_EXT_EXIT=0
+2026-10-04T04:51:41Z

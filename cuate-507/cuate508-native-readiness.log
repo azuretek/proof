@@ -1,0 +1,21 @@
+15:46:53 quiet 1/3 (load 1.61 1.76)
+15:46:58 quiet 2/3 (load 1.56 1.75)
+15:47:04 quiet 3/3 (load 1.92 1.82)
+15:47:04 host quiet, starting
+Test Suite 'NoticeGroupReadinessTests' started at 2026-10-24 15:47:04.723.
+Test Case '-[main.NoticeGroupReadinessTests testAHittableContainerWithoutItsContentButtonDoesNotConsumeExpansion]' started.
+Test Case '-[main.NoticeGroupReadinessTests testAHittableContainerWithoutItsContentButtonDoesNotConsumeExpansion]' passed (0.000 seconds).
+Test Case '-[main.NoticeGroupReadinessTests testAnAlreadyExposedTargetDoesNotPressTheGroup]' started.
+Test Case '-[main.NoticeGroupReadinessTests testAnAlreadyExposedTargetDoesNotPressTheGroup]' passed (0.000 seconds).
+Test Case '-[main.NoticeGroupReadinessTests testCollapsedLocalNoticeIsExpandedButNeverAcceptedAsTheInjectedTarget]' started.
+Test Case '-[main.NoticeGroupReadinessTests testCollapsedLocalNoticeIsExpandedButNeverAcceptedAsTheInjectedTarget]' passed (0.000 seconds).
+Test Case '-[main.NoticeGroupReadinessTests testCompactListTransitionAllowsOneSettledAppGroupPressButNeverAcceptsALocalNotice]' started.
+Test Case '-[main.NoticeGroupReadinessTests testCompactListTransitionAllowsOneSettledAppGroupPressButNeverAcceptsALocalNotice]' passed (0.000 seconds).
+Test Case '-[main.NoticeGroupReadinessTests testMissingOrOffscreenExpansionButtonResetsStability]' started.
+Test Case '-[main.NoticeGroupReadinessTests testMissingOrOffscreenExpansionButtonResetsStability]' passed (0.000 seconds).
+Test Case '-[main.NoticeGroupReadinessTests testMissingOrUnrelatedGroupNeverAuthorizesAPress]' started.
+Test Case '-[main.NoticeGroupReadinessTests testMissingOrUnrelatedGroupNeverAuthorizesAPress]' passed (0.000 seconds).
+Test Case '-[main.NoticeGroupReadinessTests testMovingExpansionButtonDoesNotConsumeTheSinglePress]' started.
+Test Case '-[main.NoticeGroupReadinessTests testMovingExpansionButtonDoesNotConsumeTheSinglePress]' passed (0.000 seconds).
+Test Suite 'NoticeGroupReadinessTests' passed at 2026-10-24 15:47:04.725.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.001 (0.002) seconds

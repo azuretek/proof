@@ -1,0 +1,19 @@
+Test Suite 'NoticeGroupReadinessTests' started at 2026-10-24 15:49:35.831.
+Test Case '-[main.NoticeGroupReadinessTests testAHittableContainerWithoutItsContentButtonDoesNotConsumeExpansion]' started.
+Test Case '-[main.NoticeGroupReadinessTests testAHittableContainerWithoutItsContentButtonDoesNotConsumeExpansion]' passed (0.000 seconds).
+Test Case '-[main.NoticeGroupReadinessTests testAnAlreadyExposedTargetDoesNotPressTheGroup]' started.
+Test Case '-[main.NoticeGroupReadinessTests testAnAlreadyExposedTargetDoesNotPressTheGroup]' passed (0.000 seconds).
+Test Case '-[main.NoticeGroupReadinessTests testCollapsedLocalNoticeIsExpandedButNeverAcceptedAsTheInjectedTarget]' started.
+Test Case '-[main.NoticeGroupReadinessTests testCollapsedLocalNoticeIsExpandedButNeverAcceptedAsTheInjectedTarget]' passed (0.000 seconds).
+Test Case '-[main.NoticeGroupReadinessTests testCompactListTransitionAllowsOneSettledAppGroupPressButNeverAcceptsALocalNotice]' started.
+/tmp/NoticeGroupReadinessTests.swift:81: error: -[main.NoticeGroupReadinessTests testCompactListTransitionAllowsOneSettledAppGroupPressButNeverAcceptsALocalNotice] : XCTAssertEqual failed: ("waitForTarget") is not equal to ("expandGroup")
+Test Case '-[main.NoticeGroupReadinessTests testCompactListTransitionAllowsOneSettledAppGroupPressButNeverAcceptsALocalNotice]' failed (0.001 seconds).
+Test Case '-[main.NoticeGroupReadinessTests testMissingOrOffscreenExpansionButtonResetsStability]' started.
+Test Case '-[main.NoticeGroupReadinessTests testMissingOrOffscreenExpansionButtonResetsStability]' passed (0.000 seconds).
+Test Case '-[main.NoticeGroupReadinessTests testMissingOrUnrelatedGroupNeverAuthorizesAPress]' started.
+Test Case '-[main.NoticeGroupReadinessTests testMissingOrUnrelatedGroupNeverAuthorizesAPress]' passed (0.000 seconds).
+Test Case '-[main.NoticeGroupReadinessTests testMovingExpansionButtonDoesNotConsumeTheSinglePress]' started.
+mutation_exit=1
+Test Case '-[main.NoticeGroupReadinessTests testMovingExpansionButtonDoesNotConsumeTheSinglePress]' passed (0.000 seconds).
+Test Suite 'NoticeGroupReadinessTests' failed at 2026-10-24 15:49:35.834.
+	 Executed 7 tests, with 1 failure (0 unexpected) in 0.002 (0.003) seconds
